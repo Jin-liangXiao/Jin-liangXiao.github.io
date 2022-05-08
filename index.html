@@ -1,3 +1,48 @@
+<style>
+.biblist { }
+
+/* The item */
+.biblist li { }
+
+/* You can define custom styles for plstyle field here. */
+
+
+/*************************************
+   The box that contain BibTeX code
+ *************************************/
+div.noshow { display: none; }
+div.BibTeX {
+  margin-right: 1%;
+  margin-left: 3%;
+  margin-top: 1.2em;
+  margin-bottom: 1.3em;
+  border: 1px solid silver;
+  padding: 0.3em 0.5em;
+  background: #eeeeee;
+}
+div.BibTeX pre { font-size: 85%; overflow: auto;  width: 100%; }
+</style>
+
+<script>
+function toggleBibtex(articleid) {
+  var bib = document.getElementById('bib_'+articleid);
+  if (bib) {
+    if(bib.className.indexOf('BibTeX') != -1) {
+    bib.className.indexOf('noshow') == -1?bib.className = 'BibTeX noshow':bib.className = 'BibTeX';
+    }
+  } else {
+    return;
+  }
+}
+</script>
+
+
+
+
+
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
@@ -25,7 +70,7 @@ Email: jinliang_xiao@163.com <br />
   <a href="https://github.com/Jin-liangXiao">[GitHub]</a></p>
 </td></tr></table>
 <h2>About me</h2>
-<p>I'm currently pursuing the M.S. degree with the School of Mathematical Sciences, University of Electronic Science and Technology of China, Chengdu, China.
+<p>I'm currently pursuing the M.S. degree (advised by <a href="https://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/"> Prof. Liang-Jian Deng</a>) with the School of Mathematical Sciences, University of Electronic Science and Technology of China, Chengdu, China.
 Before that, I received the B.S. degree in mathematics from the School of Mathematics and Statistics, Yunnan University (YNU), Kunming, China, in 2019. </p><br />
 <p>From 2016 to 2018, I was a Joint-Training B.S. Student with the School of Mathematical Sciences, Fudan University, Shanghai, China.</p>
 
@@ -59,6 +104,24 @@ Before that, I received the B.S. degree in mathematics from the School of Mathem
 </a> <br />
 <b>Jin-Liang Xiao</b>, Ting-Zhu Huang*, Liang-Jian Deng*, Zhong-Cheng Wu, Gemine Vivone. <br />
 <i>IEEE Transactions on Geoscience and Remote Sensing, 2022. </i></p>
+</li>
+ &nbsp;<a href="javascript:toggleBibtex('xiaotgrs2022')" class="textlink" style="color: blue">[BibTeX]</a>
+<div id="bib_xiaotgrs2022" class="BibTeX noshow">
+<pre>
+@ARTICLE{xiao2022tgrs,
+	author={J.-L. Xiao, T.-Z. Huang, L.-J. Deng, Z.-C. Wu, and G. Vivone},
+	journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+	title={A New Context-Aware Details Injection Fidelity with Adaptive Coefficients Estimation for Variational Pansharpening}, 
+	year={2022},
+	volume={},
+	number={},
+	pages={},
+	doi={10.1109/TGRS.2022.3154480}
+   }
+</pre>
+</div>
+&nbsp;<a href="https://github.com/liangjiandeng/CDIF" style="color: blue">[Code]</a>
+<br>
 </li>
 </ul>
 
