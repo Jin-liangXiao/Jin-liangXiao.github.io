@@ -20,9 +20,7 @@ My research interest is mainly focusing on **image fusion**.
 
 
 {% include_relative _includes/publications.md %}
-## Teaching
 
-- Teaching Assistant, [High-Level Computer Vision](https://www.mpi-inf.mpg.de/hlcv) at [Universität des Saarlandes](https://www.uni-saarland.de/), 2021 and 2022
 
 {% include_relative _includes/services.md %}
 
