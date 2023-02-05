@@ -11,7 +11,7 @@
     <p>09/2020-06/2022: University of Electronic Science and Technology of China (UESTC); Master student in Mathematics (Supervisor: <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/">Prof. Liang-Jian Deng</a>)</p>
   </li>
   <li>
-    <p>09/2016-06/2018: Joint-Training Bachelor student in Mathematics, Fudan University (FDU)</p>
+    <p>09/2016-06/2018: Fudan University (FDU); Joint-Training Bachelor student in Mathematics</p>
   </li>
   <li>
     <p>09/2015-06/2019: Yunnan University (YNU); Bachelor student in Mathematics</p>
