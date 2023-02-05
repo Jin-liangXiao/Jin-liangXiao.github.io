@@ -19,7 +19,7 @@
       <a href="https://ieeexplore.ieee.org/document/9721243" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
-      <a href="assets/img/cdif-bib.text" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+      <a href="assets/img/cdif-bib.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
     </div>
   </div>
 </div>
