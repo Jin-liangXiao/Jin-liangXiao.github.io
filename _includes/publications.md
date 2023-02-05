@@ -19,7 +19,6 @@
       <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
       <a href="https://bib.yliu.me/AAAI23.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
-      <strong> <i style="color:#e74d3c">Oral Presentation</i></strong>
     </div>
   </div>
 </div>
