@@ -9,8 +9,8 @@ I'm currently working toward the Ph.D. degree (advised by [Prof. Ting-Zhu Huang]
 Before that, I received the B.S. degree in mathematics and applied mathematics from the [Yunnan University](www.ynu.uestc.edu.cn), Kunming, Yunnan, China.
 In 2016 and 2017, I was a Joint-Training B.S. student in [Fudan University](www.fdu.uestc.edu.cn).
  
+My research interest is mainly focusing on **image fusion**.
 
-My research lies at the intersection of **computer vision** and **machine learning** -- with a special focus on building intelligent visual systems that are continual and data-efficient. My research interests include **continual learning**, **few-shot learning**, **semi-supervised learning**, and **image generation**.
 
 <!--
 <strong style="color:#e74d3c; font-weight:600">I am looking for a postdoc or research scientist position in the US and EU. I would appreciate a ping if you see a job I might fit.</strong>
