@@ -16,7 +16,7 @@ My research interest is mainly focusing on **image fusion**.
 <strong style="color:#e74d3c; font-weight:600">I am looking for a postdoc or research scientist position in the US and EU. I would appreciate a ping if you see a job I might fit.</strong>
 -->
 
-## News
+
 
 
 {% include_relative _includes/publications.md %}
