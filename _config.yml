@@ -6,7 +6,7 @@ affiliation_link: https://www.uestc.edu.cn/
 email: jinliang_xiao@163.com
 
 # Search Engine Optimization (SEO)
-keywords: yaoyao liu, liu yaoyao, yaoyaoliu, liuyaoyao
+keywords: Jin-Liang Xiao, Jin-Liang Xiao, Jin-Liang Xiao, Jin-Liang Xiao
 canonical: https://www.cs.jhu.edu/~yyliu/
 description: Yaoyao Liu is a postdoctoral fellow at Johns Hopkins University. His research lies in meta-learning, incremental learning, and image generation.
 
@@ -17,11 +17,11 @@ enable_jhu_logo: true
 enable_last_update: false
 
 # Links
-google_scholar: https://scholar.google.com/citations?user=Uf9GqRsAAAAJ
-cv_link: https://files.yliu.me/Yaoyao_Liu_Curriculum_Vitae.pdf
-github_link: https://github.com/yaoyao-liu/
-linkedin: https://www.linkedin.com/in/liuyaoyao/
-twitter: https://twitter.com/YaoyaoLiu1/
+google_scholar: https://scholar.google.com.hk/citations?user=g5xlNmkAAAAJ&hl=zh-CN
+cv_link: 
+github_link: https://github.com/Jin-liangXiao/
+linkedin: 
+twitter: 
 
 # Images 
 avatar: ./assets/img/IMG_9237-2_1-2.jpg
