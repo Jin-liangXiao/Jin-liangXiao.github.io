@@ -18,10 +18,7 @@ My research interest is mainly focusing on **image fusion**.
 
 ## News
 
-# - **[Dec. 2022]** [BMVC 2023](https://www.bmvc2023.org) will be in Aberdeen, and I will serve as the website chair.
-# - **[Nov. 2022]** Our paper about [class-incremental learning](https://pure.mpg.de/rest/items/item_3478882_1/component/file_3478883/content) is accepted to [AAAI 
 
-{% include_relative _includes/publications.md %}
 
 ## Teaching
 
