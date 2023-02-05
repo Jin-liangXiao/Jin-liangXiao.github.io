@@ -10,16 +10,29 @@
             <abbr class="badge">TGRS</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://arxiv.org/abs/2301.05032">Online Hyperparameter Optimization for Class-Incremental Learning</a></div>
-      <div class="author"><strong>Yaoyao Liu</strong>, Yingying Li, Bernt Schiele, Qianru Sun</div>
-      <div class="periodical"><em>AAAI Conference on Artificial Intelligence <strong>(AAAI)</strong>, 2023.</em>
+      <div class="title"><a href="https://ieeexplore.ieee.org/document/9721243">A New Context-Aware Details Injection Fidelity with Adaptive Coefficients Estimation for Variational Pansharpening</a></div>
+      <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Zhong-Cheng Wu, and Gemine Vivone</div>
+      <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing<strong></strong>, 2020.</em>
       </div>
     <div class="links">
-      <a href="https://arxiv.org/pdf/2301.05032.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      <a href="https://github.com/yaoyao-liu/online-hyperparameter-optimization/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      <a href="https://class-il.mpi-inf.mpg.de/online-hyperparameter-optimization/" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      <a href="https://bib.yliu.me/AAAI23.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
-      <strong> <i style="color:#e74d3c">Oral Presentation</i></strong>
+      <a href="https://ieeexplore.ieee.org/document/9721243" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
+      &nbsp;<a href="javascript:toggleBibtex('xiaotgrs2022')" class="textlink" style="color: blue">[BibTeX]</a>
+<div id="bib_xiaotgrs2022" class="BibTeX noshow">
+<pre>
+@ARTICLE{xiao2022tgrs,
+	author={J.-L. Xiao, T.-Z. Huang, L.-J. Deng, Z.-C. Wu, and G. Vivone},
+	journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+	title={A New Context-Aware Details Injection Fidelity with Adaptive Coefficients Estimation for Variational Pansharpening}, 
+	year={2022},
+	volume={},
+	number={},
+	pages={},
+	doi={10.1109/TGRS.2022.3154480}
+   }
+</pre>
+</div>
     </div>
   </div>
 </div>
