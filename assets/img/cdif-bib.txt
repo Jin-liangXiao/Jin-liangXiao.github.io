@@ -1,0 +1,10 @@
+@ARTICLE{xiao2022tgrs,
+	author={J.-L. Xiao, T.-Z. Huang, L.-J. Deng, Z.-C. Wu, and G. Vivone},
+	journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+	title={A New Context-Aware Details Injection Fidelity with Adaptive Coefficients Estimation for Variational Pansharpening}, 
+	year={2022},
+	volume={},
+	number={},
+	pages={},
+	doi={10.1109/TGRS.2022.3154480}
+   }
