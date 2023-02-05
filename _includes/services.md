@@ -6,6 +6,12 @@
 
 ## Awards and Honors
 
+
+<ul>
+  <li>Third-Class Academic Scholarship (学业三等奖学金), UESTC, 2022</li>
+  <li>Special Postgraduate Scholarship of Science (理科特别奖学金), UESTC, 2022</li>
+</ul>
+
 <h4 style="margin:0 10px 0;">Organization Committee</h4>
 
 <ul style="margin:0 0 5px;">
