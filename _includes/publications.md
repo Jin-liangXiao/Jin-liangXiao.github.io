@@ -56,7 +56,7 @@ function toggleBibtex(articleid) {
       <a href="https://ieeexplore.ieee.org/document/9721243" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
-&nbsp;<a href="javascript:toggleBibtex('xiaotgrs2022')" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">[BibTeX]</a>
+&nbsp;<a href="javascript:toggleBibtex('xiaotgrs2022')" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTeX</a>
 <div id="bib_xiaotgrs2022" class="BibTeX noshow">
 <pre>
 @ARTICLE{xiao2022tgrs,
