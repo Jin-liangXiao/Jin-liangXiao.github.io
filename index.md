@@ -7,7 +7,7 @@ layout: homepage
 I'm currently working toward the Ph.D. degree (advised by [Prof. Ting-Zhu Huang](https://www.math.uestc.edu.cn/info/1081/2041.htm) and [Prof. Liang-Jian Deng](https://liangjiandeng.github.io/)) in mathematics with the School of Mathematical Sciences, University of Electronic Science and Technology of China, Chengdu, China.
 
 Before that, I received the B.S. degree in mathematics and applied mathematics from the [Yunnan University](www.ynu.uestc.edu.cn), Kunming, Yunnan, China.
-
+In 2016 and 2017, I was a Joint-Training B.S. student in [Fudan University](www.fdu.uestc.edu.cn).
  
 
 My research lies at the intersection of **computer vision** and **machine learning** -- with a special focus on building intelligent visual systems that are continual and data-efficient. My research interests include **continual learning**, **few-shot learning**, **semi-supervised learning**, and **image generation**.
