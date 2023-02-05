@@ -18,6 +18,21 @@
       <a href="https://ieeexplore.ieee.org/document/9721243" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
+      &nbsp;<a href="javascript:toggleBibtex('wuneurips2022')" class="textlink" style="color: blue">[BibTeX]</a>
+<div id="bib_wuneurips2022" class="BibTeX noshow">
+<pre>
+@ARTICLE{wuneurips2022,
+	author={Z.-C. Wu and T.-Z. Huang and L.-J. Deng and H.-X. Dou and D. Meng},
+	journal={Thirty-sixth Conference on Neural Information Processing Systems (NeurIPS)},
+	title={Tensor Wheel Decomposition and Its Tensor Completion Application},
+ 	year={2022},
+  	volume={},
+  	number={},
+  	pages={},
+  	doi={}
+   }
+</pre>
+</div>
       <a href="https://bib.yliu.me/AAAI23.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
     </div>
   </div>
