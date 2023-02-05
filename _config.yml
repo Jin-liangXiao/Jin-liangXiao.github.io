@@ -11,7 +11,7 @@ canonical: https://jin-liangxiao.github.io/
 description: Jin-Liang Xiao is currently working toward the Ph.D. degree. His research lies in image fusion.
 
 # The option is used to enable the Johns Hopkins template.
-enable_jhu_logo: false
+enable_jhu_logo: true
 
 # The option is used to show the last update time.
 enable_last_update: false
@@ -29,8 +29,8 @@ favicon: ./assets/img/logo_english.png
 favicon_dark: ./assets/img/uestc.jpg
 
 # Footnotes
-footnote: Feel free to use my website's source code.
-footnote_link: https://github.com/yaoyao-liu/minimal-light
+# footnote: Feel free to use my website's source code.
+# footnote_link: https://github.com/yaoyao-liu/minimal-light
 
 # Analytics
 # Please remove the following lines about analytics services if you fork my project. 
