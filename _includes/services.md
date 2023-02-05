@@ -2,6 +2,22 @@
 
 <h4 style="margin:0 10px 0;">Conference Reviewers</h4>
 
+
+<ul style="margin:0 0 5px;">
+  <li>
+    <p>03/2021-Current: Tensor Learning Team, RIKEN Center for Advanced Intelligence Project (AIP); visiting student in Computer Science (Supervisor: <a href="https://qibinzhao.github.io">Prof. Qibin Zhao</a>)</p>
+  </li>
+  <li>
+    <p>09/2019-Current: University of Electronic Science and Technology of China (UESTC); Ph. D. student in Applied Mathematics (Supervisor: <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a>)</p>
+  </li>
+  <li>
+    <p>09/2017-06/2019: University of Electronic Science and Technology of China (UESTC); Master student in Applied Mathematics (Supervisor: <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a>)</p>
+  </li>
+  <li>
+    <p>09/2013-06/2017: Anhui University of Finance and Economics (AUFE); Bachelor student in Information and Computing Science (Supervisor: Prof. Chunzhong Li)</p>
+  </li>
+</ul>
+
 <ul style="margin:0 0 5px;">
   <li> University of Electronic Science and Technology of China (UESTC); Ph. D. student in Applied Mathematics (Supervisor: <a href="http://cvpr2023.thecvf.com/"><autocolor> Prof. Ting-Zhu Huang)</autocolor></a></li>
   <li><a href="http://iccv2021.thecvf.com/"><autocolor>IEEE/CVF International Conference on Computer Vision (ICCV) 2021</autocolor></a></li>
