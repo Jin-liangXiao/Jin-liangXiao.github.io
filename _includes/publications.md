@@ -18,21 +18,6 @@
       <a href="https://ieeexplore.ieee.org/document/9721243" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Project Page</a>
-      &nbsp;<a href="javascript:toggleBibtex('xiaotgrs2022')" class="textlink" style="color: blue">[BibTeX]</a>
-<div id="bib_xiaotgrs2022" class="BibTeX noshow">
-<pre>
-@ARTICLE{xiao2022tgrs,
-	author={J.-L. Xiao, T.-Z. Huang, L.-J. Deng, Z.-C. Wu, and G. Vivone},
-	journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-	title={A New Context-Aware Details Injection Fidelity with Adaptive Coefficients Estimation for Variational Pansharpening}, 
-	year={2022},
-	volume={},
-	number={},
-	pages={},
-	doi={10.1109/TGRS.2022.3154480}
-   }
-</pre>
-</div>
     </div>
   </div>
 </div>
