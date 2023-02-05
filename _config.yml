@@ -7,11 +7,11 @@ email: jinliang_xiao@163.com
 
 # Search Engine Optimization (SEO)
 keywords: Jin-Liang Xiao, Jin-Liang Xiao, Jin-Liang Xiao, Jin-Liang Xiao
-canonical: https://www.cs.jhu.edu/~yyliu/
-description: Yaoyao Liu is a postdoctoral fellow at Johns Hopkins University. His research lies in meta-learning, incremental learning, and image generation.
+canonical: https://jin-liangxiao.github.io/
+description: Jin-Liang Xiao is currently working toward the Ph.D. degree. His research lies in image fusion.
 
 # The option is used to enable the Johns Hopkins template.
-enable_jhu_logo: true
+enable_jhu_logo: false
 
 # The option is used to show the last update time.
 enable_last_update: false
