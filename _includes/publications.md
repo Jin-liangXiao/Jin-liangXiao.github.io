@@ -10,7 +10,7 @@
             <abbr class="badge">TGRS</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://ieeexplore.ieee.org/document/9721243">A New Context-Aware Details Injection Fidelity with Adaptive Coefficients Estimation for Variational Pansharpening</a></div>
+      <div class="title"><a href="https://ieeexplore.ieee.org/document/9721243"><li>A New Context-Aware Details Injection Fidelity with Adaptive Coefficients Estimation for Variational Pansharpening</li></a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Zhong-Cheng Wu, and Gemine Vivone</div>
       <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2022.</em>
       </div>
