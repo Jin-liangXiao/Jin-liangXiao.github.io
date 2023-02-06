@@ -1,6 +1,6 @@
 ## Experiences
 
-<h4 style="margin:0 10px 0;">Education</h4>
+<h4 style="margin:0 10px 0;">Educations</h4>
 
 
 <ul style="margin:0 0 5px;">
