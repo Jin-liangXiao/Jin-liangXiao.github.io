@@ -25,6 +25,27 @@
 </div>
 </li>
 
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="assets/img/sfnlr.png" width="200px" class="teaser img-fluid z-depth-1" style="width=100;height=30%">
+            <abbr class="badge">TGRS</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://ieeexplore.ieee.org/document/10218368">Variational Pansharpening Based on Coefficient Estimation with Nonlocal Regression</a></div>
+      <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Zhong-Cheng Wu, Xiao Wu, and Gemine Vivone</div>
+      <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2023.</em>
+      </div>
+    <div class="links">
+      <a href="https://ieeexplore.ieee.org/document/10218368" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://github.com/Jin-liangXiao/SFNLR" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="" style="font-size:12px;">Project Page</a>
+      <a href="https://github.com/Jin-liangXiao/Jin-liangXiao.github.io/blob/main/assets/img/sfnlr-bib.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+    </div>
+  </div>
+</div>
+</li>
+
 
 
 <br>
