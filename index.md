@@ -8,6 +8,8 @@ I'm currently working toward the Ph.D. degree (advised by [Prof. Ting-Zhu Huang]
 
 Before that, I received the B.S. degree in mathematics and applied mathematics from the [Yunnan University](https://www.ynu.edu.cn), Kunming, Yunnan, China.
 In 2016 and 2017, I was a Joint-Training B.S. student in [Fudan University](https://www.fdu.edu.cn).
+
+Starting in Nov. 2023, I’m an intern with the Tensor Learning Team, [RIKEN AIP](https://www.riken.jp/en/research/labs/aip/), Tokyo, Japan, under the supervision of [Prof. Qibin Zhao](https://qibinzhao.github.io/).
  
 My research interest is mainly focusing on **image fusion**.
 
