@@ -61,7 +61,7 @@
     <p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10500430">A Coupled Tensor Double-Factor Method for
 Hyperspectral and Multispectral Image Fusion</a> <br />
 Ting Xu, Ting-Zhu Huang*, Liang-Jian Deng*, <b>Jin-Liang Xiao</b>, Clifford Broni-Bediako, Junshi Xia, Naoto Yokoya <br />
-<em>IEEE Transactions on Geoscience and Remote Sensing</em> (<b>TGRS</b>), 2024. </p>
+<em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024. </p>
   </li>
 
 
