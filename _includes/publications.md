@@ -48,7 +48,7 @@
       <a href="assets/PDF/2023SFNLR.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/Jin-liangXiao/SFNLR" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
-      <a href="https://dblp.org/rec/journals/tgrs/XiaoHDWWV23.html?view=bibtex" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+      <a href="https://dblp.org/rec/journals/tgrs/XiaoHDWV22.html?view=bibtex&param=0" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
     </div>
   </div>
 </div>
@@ -74,7 +74,7 @@
       <a href="assets/PDF/2022CDIF.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
-      <a href="https://dblp.org/rec/journals/tgrs/XiaoHDWV22.html?view=bibtex" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+      <a href="https://dblp.org/rec/journals/tgrs/XiaoHDWV22.html?view=bibtex&param=0" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
     </div>
   </div>
 </div>
