@@ -28,6 +28,20 @@
   </div>
 </div>
 </li>
+<div id="bib_wangijcv2024" class="BibTeX noshow">
+<pre>
+@ARTICLE{wangijcv2024,
+title={A General Paradigm with Detail-Preserving Conditional Invertible Network for Image Fusion },
+author={ Wu Wang, Liang-Jian Deng, Ran Ran, Gemine Vivone },
+journal={ International Journal of Computer Vision (IJCV)},
+volume={13},
+number={},
+pages={1029–1054},
+year={2024},
+doi={10.1007/s11263-023-01924-5}
+}
+</pre>
+</div>
 
 
 
