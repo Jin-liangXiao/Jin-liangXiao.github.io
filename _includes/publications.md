@@ -44,7 +44,7 @@
       <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2023.</em>
       </div>
     <div class="links">
-      <a href="https://github.com/Jin-liangXiao/Jin-liangXiao.github.io/blob/main/assets/PDF/2023SFNLR.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="assets/PDF/2023SFNLR.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/Jin-liangXiao/SFNLR" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
       <a href="https://github.com/Jin-liangXiao/Jin-liangXiao.github.io/blob/main/assets/img/sfnlr-bib.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
@@ -70,10 +70,10 @@
       <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2022.</em>
       </div>
     <div class="links">
-      <a href="https://github.com/Jin-liangXiao/Jin-liangXiao.github.io/blob/main/assets/PDF/2022CDIF.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="assets/PDF/2022CDIF.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
-      <a href="https://github.com/Jin-liangXiao/Jin-liangXiao.github.io/blob/main/assets/img/cdif-bib.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+      <a href="assets/img/cdif-bib.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
     </div>
   </div>
 </div>
