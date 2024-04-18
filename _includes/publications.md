@@ -20,7 +20,7 @@
       <div class="periodical"><em>Inverse Problems and Imaging, 2024.</em>
       </div>
     <div class="links">
-      <a href="https://github.com/Jin-liangXiao/Jin-liangXiao.github.io/blob/main/assets/PDF/2024ipi.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="assets/PDF/2024ipi.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/Jin-liangXiao/L0-TC" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
       <a href="" style="font-size:12px;">Project Page</a>
       <a href="https://github.com/Jin-liangXiao/Jin-liangXiao.github.io/blob/main/assets/img/IPI-bib.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
