@@ -1,0 +1,9 @@
+@article{xiao2024ipi,
+title = {A novel $ \ell_{0} $ minimization framework of tensor tubal rank and its multi-dimensional image completion application},
+author = {Xiao, Jin-Liang and Huang, Ting-Zhu and Deng, Liang-Jian and Dou, Hong-Xia},
+journal = {Inverse Problems and Imaging},
+pages = {},
+year = {2024},
+issn = {1930-8337},
+doi = {10.3934/ipi.2024018},
+}
