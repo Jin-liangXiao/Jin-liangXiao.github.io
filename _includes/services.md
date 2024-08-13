@@ -22,6 +22,7 @@
 
 
 <ul>
+  <li>Information Fusion</li>
   <li>IEEE Transactions on Geoscience and Remote Sensing</li>
   <li>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</li>
   <li>IEEE Geoscience and Remote Sensing Letters</li>
