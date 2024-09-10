@@ -80,7 +80,19 @@
 </div>
 </li>
 
+  <li>
+    <p><a href="https://ieeexplore.ieee.org/abstract/document/10642508">A Novel Fidelity Based on the Adaptive Domain for Pansharpening</a> <br />
+<strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Ting Xu <br />
+<em>IEEE International Geoscience and Remote Sensing Symposium</em>, 2024. </p>
+    <div class="links">
+      <a href="assets/PDF/2022CDIF.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://github.com/liangjiandeng/CDIF" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="" style="font-size:12px;">Project Page</a>
+      <a href="https://dblp.org/rec/journals/tgrs/XiaoHDWV22.html?view=bibtex&param=0" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+    </div>
 
+    
+  </li>
 
 
   <li>
