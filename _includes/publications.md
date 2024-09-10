@@ -81,7 +81,7 @@
 </li>
 
   <li>
-    <p><a href="https://ieeexplore.ieee.org/abstract/document/10642508"><strong>A Novel Fidelity Based on the Adaptive Domain for Pansharpening</strong>strong></a> <br />
+    <p><a href="https://ieeexplore.ieee.org/abstract/document/10642508"><strong>A Novel Fidelity Based on the Adaptive Domain for Pansharpening</strong></a> <br />
 <strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Ting Xu <br />
 <em>IEEE International Geoscience and Remote Sensing Symposium</em>, 2024. 
       [<a href="assets/PDF/igarss-24.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>]
