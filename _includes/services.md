@@ -34,6 +34,7 @@
 
 
 <ul>
+  <li>First-Class Academic Scholarship (学业一等奖学金), UESTC, 2024</li>
   <li>Second-Class Academic Scholarship (学业二等奖学金), UESTC, 2023</li>
   <li>Third-Class Academic Scholarship (学业三等奖学金), UESTC, 2022</li>
   <li>Special Postgraduate Scholarship of Science (理科特别奖学金), UESTC, 2022</li>
