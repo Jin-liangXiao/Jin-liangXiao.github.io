@@ -103,7 +103,9 @@ Ting Xu, Ting-Zhu Huang*, Liang-Jian Deng*, <strong>Jin-Liang Xiao</strong>, Cli
   <li>
     <p><a href="https://ieeexplore.ieee.org/abstract/document/10641266">Endmember Distinguished Low-Rank and Sparse Representation for Hyperspectral Unmixing</a> <br />
 Ruifeng Ren, <strong>Jin-Liang Xiao</strong>, Jie Huang* <br />
-<em>IEEE International Geoscience and Remote Sensing Symposium</em>, 2024. </p>
+<em>IEEE International Geoscience and Remote Sensing Symposium</em>, 2024. 
+    [<a href="assets/PDF/EDLSpRU.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Slide</a>]
+    </p>
   </li>
 
 
