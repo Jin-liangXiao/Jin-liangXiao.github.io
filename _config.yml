@@ -37,7 +37,7 @@ favicon_dark: ./assets/img/uestc.jpg
 # Please remove the following lines about analytics services if you fork my project. 
 # Otherwise, the analytics information of your website will be recorded to my ClustrMaps accounts.
 # clustrmaps_id: l3lesztPwCz-uXlzFI1Lt9SB3Ctz-pBQuMdYqnD0Ul8
-<script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=MwjQzPd1PSzx3xs-WWr-OV2-QiszmmXRSrWYwXMBa-s"></script>
+# <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=MwjQzPd1PSzx3xs-WWr-OV2-QiszmmXRSrWYwXMBa-s"></script>
 
 # The following files will be removed from the generated website.
 exclude:
