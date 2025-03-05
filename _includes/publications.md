@@ -31,6 +31,26 @@
 
 
 
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="assets/img/eajam_tfr.png" width="200px" class="teaser img-fluid z-depth-1" style="width=100;height=30%">
+            <abbr class="badge">EAJAM</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://ieeexplore.ieee.org/document/9721243">A Novel Nonconvex Rank Approximation with Application to the Matrix Completion</a></div>
+      <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Zhong-Cheng Wu, and Liang-Jian Deng*</div>
+      <div class="periodical"><em>East Asian Journal on Applied Mathematics, 2024.</em>
+      </div>
+    <div class="links">
+      <a href="assets/PDF/2022CDIF.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://github.com/Jin-liangXiao/TFR_code" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="https://dblp.org/rec/journals/tgrs/XiaoHDWV22.html?view=bibtex&param=0" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+    </div>
+  </div>
+</div>
+</li>
+
 
 
 <li>
@@ -79,6 +99,21 @@
   </div>
 </div>
 </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <li>
     <p><strong><a href="https://ieeexplore.ieee.org/abstract/document/10642508">A Novel Fidelity Based on the Adaptive Domain for Pansharpening</a></strong> <br />
