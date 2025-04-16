@@ -23,10 +23,12 @@
 
 <ul>
   <li>Information Fusion</li>
+  <li>Pattern Recognition</li>
   <li>IEEE Transactions on Geoscience and Remote Sensing</li>
   <li>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</li>
   <li>IEEE Geoscience and Remote Sensing Letters</li>
   <li>Journal of Applied Remote Sensing</li>
+  <li>IET Image Processing</li>
 </ul>
 
 
@@ -35,6 +37,7 @@
 
 <ul>
   <li>National Scholarship for Ph. D. student (博士研究生国家奖学金), 2024</li>
+  <li>Academic Rookie (学术新秀), UESTC, 2025</li>
   <li>First-Class Academic Scholarship (学业一等奖学金), UESTC, 2024</li>
   <li>Second-Class Academic Scholarship (学业二等奖学金), UESTC, 2023</li>
   <li>Third-Class Academic Scholarship (学业三等奖学金), UESTC, 2022</li>
