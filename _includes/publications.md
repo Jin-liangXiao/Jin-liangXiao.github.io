@@ -8,6 +8,40 @@
 
 
 
+
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="assets/img/cvpr25.jpg" width="250px" class="teaser img-fluid z-depth-1" style="width=100%">
+            <abbr class="badge">CVPR</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://www.aimsciences.org/article/doi/10.3934/ipi.2024018">Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance</a></div>
+      <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng, Guang Lin, Zihan Cao, Chao Li, Qibin Zhao*</div>
+      <div class="periodical"><em>The IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.</em>
+      </div>
+    <div class="links">
+      <a href="assets/PDF/2024ipi.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://github.com/Jin-liangXiao/DM-zs" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="" style="font-size:12px;">Project Page</a>
+      <a href="https://github.com/Jin-liangXiao/Jin-liangXiao.github.io/blob/main/assets/img/IPI-bib.txt" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+    </div>
+  </div>
+</div>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
