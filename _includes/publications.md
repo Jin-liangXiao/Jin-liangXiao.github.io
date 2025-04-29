@@ -89,7 +89,26 @@
 
 
 
-
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="assets/img/igarss24.jpg" width="200px" class="teaser img-fluid z-depth-1" style="width=100;height=30%">
+            <abbr class="badge">IGARSS</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://ieeexplore.ieee.org/abstract/document/10642508">A Novel Fidelity Based on the Adaptive Domain for Pansharpening</a></div>
+      <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Ting Xu</div>
+      <div class="periodical"><em>IEEE International Geoscience and Remote Sensing Symposium, 2024.</em>
+      </div>
+    <div class="links">
+      <a href="assets/PDF/igarss-24.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="assets/PDF/pan_igarss.pdf" style="font-size:12px;">Slide</a>
+      <a href="https://dblp.org/rec/conf/igarss/XiaoHDX24.html?view=bibtex" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+    </div>
+  </div>
+</div>
+</li>
 
 
 
@@ -120,26 +139,7 @@
 </li>
 
 
-<li>
-<div class="pub-row">
-  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="assets/img/igarss24.jpg" width="200px" class="teaser img-fluid z-depth-1" style="width=100;height=30%">
-            <abbr class="badge">IGARSS</abbr>
-  </div>
-  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://ieeexplore.ieee.org/abstract/document/10642508">A Novel Fidelity Based on the Adaptive Domain for Pansharpening</a></div>
-      <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Ting Xu</div>
-      <div class="periodical"><em>IEEE International Geoscience and Remote Sensing Symposium, 2024.</em>
-      </div>
-    <div class="links">
-      <a href="assets/PDF/igarss-24.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
-      <a href="" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      <a href="assets/PDF/pan_igarss.pdf" style="font-size:12px;">Slide</a>
-      <a href="https://dblp.org/rec/conf/igarss/XiaoHDX24.html?view=bibtex" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
-    </div>
-  </div>
-</div>
-</li>
+
 
 
 
