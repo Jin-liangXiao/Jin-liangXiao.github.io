@@ -167,7 +167,11 @@
 
 
 
-
+ <li>
+    <p><a href="https://ieeexplore.ieee.org/abstract/document/10778974">Deep Learning in Remote Sensing Image Fusion: Methods, protocols, data, and future perspectives</a> <br />
+Gemine Vivone, Liang-Jian Deng, Shangqi Deng, Danfeng Hong, Menghui Jiang, Chenyu Li, Wei Li, Huanfeng Shen, Xiao Wu, <strong>Jin-Liang Xiao</strong>, Jing Yao, Mengmeng Zhang, Jocelyn Chanussot, Salvador García, Antonio Plaza <br />
+<em>IEEE Geoscience and Remote Sensing Magazine</em>, 2024. </p>
+  </li>
 
 
 
