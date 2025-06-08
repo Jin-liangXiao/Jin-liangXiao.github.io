@@ -16,14 +16,13 @@
             <abbr class="badge">CVPR</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="">Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance</a></div>
+      <div class="title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.html"><a href="">Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng, Guang Lin, Zihan Cao, Chao Li, Qibin Zhao*</div>
       <div class="periodical"><em>The IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.</em>
       </div>
     <div class="links">
-      <a href="" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
       <a href="https://github.com/Jin-liangXiao/DM-zs" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
-      <a href="" style="font-size:12px;">Project Page</a>
       <a href="" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
     </div>
   </div>
