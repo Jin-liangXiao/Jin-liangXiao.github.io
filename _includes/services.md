@@ -28,6 +28,7 @@
   <li>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</li>
   <li>IEEE Geoscience and Remote Sensing Letters</li>
   <li>Journal of Applied Remote Sensing</li>
+  <li>Image and Vision Computing</li>
   <li>IET Image Processing</li>
 </ul>
 
