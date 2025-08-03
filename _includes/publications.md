@@ -143,7 +143,7 @@
             <abbr class="badge">EAJAM</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
-      <div class="title"><a href="https://journal.global-sci.org/intro/online/read?online_id=2571">A Novel Nonconvex Rank Approximation with Application to the Matrix Completion</a></div>
+      <div class="title"><a href="https://global-sci.com/article/91966/a-novel-nonconvex-rank-approximation-with-application-to-the-matrix-completion">A Novel Nonconvex Rank Approximation with Application to the Matrix Completion</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Zhong-Cheng Wu, and Liang-Jian Deng*</div>
       <div class="periodical"><em>East Asian Journal on Applied Mathematics, 2024.<strong><font color="#FF0000">(中国数学会T2期刊)</font></strong></em>
       </div>
