@@ -80,3 +80,38 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li div.abstract.hidden.open { border-color: var(--global-text-color); }
 
 .publications ol.bibliography li .teaser { border-radius: 8px; box-shadow: 3px 3px 6px #888; height: auto; width: 250px; margin-top: 10px; margin-left: 5px; margin-bottom: 10px; object-fit: cover; }
+
+
+.navbar {
+  position: fixed;            /* 固定在页面顶部 */
+  top: 0;
+  left: 0;
+  width: 100%;                /* 宽度100%铺满 */
+  background-color: var(--global-theme-color); /* 用你定义的主题色 */
+  color: white;
+  padding: 0.5rem 1rem;       /* 内边距，左右1rem，上下0.5rem */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 轻微阴影 */
+  z-index: 1000;              /* 确保在最上层 */
+  font-family: 'Crimson Pro', serif; /* 继承你页面字体 */
+}
+
+.nav-list {
+  list-style: none;           /* 去掉默认列表符号 */
+  margin: 0;
+  padding: 0;
+  display: flex;              /* 横向排列 */
+  gap: 1.5rem;                /* 菜单项间距 */
+  align-items: center;
+}
+
+.nav-list li a {
+  color: white;               /* 链接白色 */
+  text-decoration: none;      /* 取消下划线 */
+  font-weight: 600;           /* 字体稍粗 */
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: var(--global-hover-color); /* 悬停变色 */
+}
