@@ -12,7 +12,7 @@
 <li>
 <div class="pub-row">
   <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
-    <img src="assets/img/cvpr25.jpg" width="250px" class="teaser img-fluid z-depth-1" style="width=100%">
+    <img src="assets/img/cvpr25.jpg" width="250px" class="teaser img-fluid z-depth-1" style="">
             <abbr class="badge">CVPR</abbr>
   </div>
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
