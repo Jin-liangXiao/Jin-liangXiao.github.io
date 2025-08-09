@@ -83,35 +83,60 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 
 .navbar {
-  position: fixed;            /* 固定在页面顶部 */
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;                /* 宽度100%铺满 */
-  background-color: var(--global-theme-color); /* 用你定义的主题色 */
+  width: 100%;
+  background-color: var(--global-theme-color);
   color: white;
-  padding: 0.5rem 1rem;       /* 内边距，左右1rem，上下0.5rem */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 轻微阴影 */
-  z-index: 1000;              /* 确保在最上层 */
-  font-family: 'Crimson Pro', serif; /* 继承你页面字体 */
-}
-
-.nav-list {
-  list-style: none;           /* 去掉默认列表符号 */
-  margin: 0;
-  padding: 0;
-  display: flex;              /* 横向排列 */
-  gap: 1.5rem;                /* 菜单项间距 */
+  padding: 0.75rem 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-family: 'Crimson Pro', serif;
+  display: flex;                /* 让navbar内容横向排列 */
+  justify-content: center;      /* 居中对齐导航菜单 */
   align-items: center;
 }
 
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;                /* 横向排列菜单项 */
+  gap: 2.5rem;                  /* 增加菜单项间距 */
+}
+
 .nav-list li a {
-  color: white;               /* 链接白色 */
-  text-decoration: none;      /* 取消下划线 */
-  font-weight: 600;           /* 字体稍粗 */
-  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.25rem 0;
+  position: relative;
   transition: color 0.3s ease;
 }
 
-.nav-list li a:hover {
-  color: var(--global-hover-color); /* 悬停变色 */
+/* 鼠标悬停和当前激活项效果 */
+.nav-list li a:hover,
+.nav-list li a.active {
+  color: var(--global-hover-color);
+}
+
+/* 底部滑动高亮条效果 */
+.nav-list li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background-color: var(--global-hover-color);
+  border-radius: 3px 3px 0 0;
+  transition: width 0.3s ease;
+}
+
+/* 悬停时底部滑条展开 */
+.nav-list li a:hover::after,
+.nav-list li a.active::after {
+  width: 100%;
 }
