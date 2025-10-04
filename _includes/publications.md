@@ -31,6 +31,29 @@
 
 
 
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="assets/img/ucl.jpg" width="200px" class="teaser img-fluid z-depth-1" style="">
+            <abbr class="badge">IF</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528">Unsupervised coefficient learning framework for variational pansharpening</a></div>
+      <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Huidong Jiang, Qibin Zhao, and Gemine Vivone</div>
+      <div class="periodical"><em>Information Fusion, 2025.<strong><font color="#FF0000">(中科院1区TOP期刊)</font></strong></em>
+      </div>
+    <div class="links">
+      <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+      <a href="https://github.com/Jin-liangXiao/UCL" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">Code</a>
+      <a href="https://github.com/Jin-liangXiao/UCL" style="font-size:12px;">Project Page</a>
+      <a href="https://github.com/Jin-liangXiao/UCL" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">BibTex</a> 
+    </div>
+  </div>
+</div>
+</li>
+
+
+
 
 
 <li>
