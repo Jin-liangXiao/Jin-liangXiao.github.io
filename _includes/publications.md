@@ -18,7 +18,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.html">Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng, Guang Lin, Zihan Cao, Chao Li, Qibin Zhao*</div>
-      <div class="periodical"><em>The IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.<strong><font color="#FF0000">(CCF-A会议)</font></strong></em>
+      <div class="periodical"><em>The IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.<strong><font color="#FF0000">(CCF-A)</font></strong></em>
       </div>
     <div class="links">
       <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
@@ -40,7 +40,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528">Unsupervised coefficient learning framework for variational pansharpening</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Huidong Jiang, Qibin Zhao, and Gemine Vivone</div>
-      <div class="periodical"><em>Information Fusion, 2025.<strong><font color="#FF0000">(中科院1区TOP期刊, IF=15.5)</font></strong></em>
+      <div class="periodical"><em>Information Fusion, 2025.</em>
       </div>
     <div class="links">
       <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
@@ -65,7 +65,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://ieeexplore.ieee.org/document/10218368">Variational Pansharpening Based on Coefficient Estimation with Nonlocal Regression</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Zhong-Cheng Wu, Xiao Wu, and Gemine Vivone</div>
-      <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2023.<strong><font color="#FF0000">(中科院1区TOP期刊)</font></strong></em>
+      <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2023.</em>
       </div>
     <div class="links">
       <a href="assets/PDF/2023SFNLR.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
@@ -91,7 +91,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://ieeexplore.ieee.org/document/9721243">A New Context-Aware Details Injection Fidelity with Adaptive Coefficients Estimation for Variational Pansharpening</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Zhong-Cheng Wu, and Gemine Vivone</div>
-      <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2022.<strong><font color="#FF0000">(中科院1区TOP期刊)</font></strong></em>
+      <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2022.</em>
       </div>
     <div class="links">
       <a href="assets/PDF/2022CDIF.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
@@ -116,7 +116,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://ieeexplore.ieee.org/abstract/document/11062857">Pansharpening Variational Model Based on Internal Adaptive Spatial Fidelity and External Deep-Driven Injection</a></div>
       <div class="author">Hong-Xia Dou, Jia-Lu Xu, <strong>Jin-Liang Xiao*</strong>, Liang-Jian Deng</div>
-      <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2025.<strong><font color="#FF0000">(中科院1区TOP期刊)</font></strong></em>
+      <div class="periodical"><em>IEEE Transactions on Geoscience and Remote Sensing, 2025.</em>
       </div>
     <div class="links">
       <a href="" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
@@ -145,7 +145,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://www.aimsciences.org/article/doi/10.3934/ipi.2024018">A novel L0 minimization framework of tensor tubal rank and its multi-dimensional image completion application</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Hong-Xia Dou</div>
-      <div class="periodical"><em>Inverse Problems and Imaging, 2024.<strong><font color="#FF0000">(中国数学会T2期刊)</font></strong></em>
+      <div class="periodical"><em>Inverse Problems and Imaging, 2024.</em>
       </div>
     <div class="links">
       <a href="assets/PDF/2024ipi.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
@@ -168,7 +168,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://global-sci.com/article/91966/a-novel-nonconvex-rank-approximation-with-application-to-the-matrix-completion">A Novel Nonconvex Rank Approximation with Application to the Matrix Completion</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Zhong-Cheng Wu, and Liang-Jian Deng*</div>
-      <div class="periodical"><em>East Asian Journal on Applied Mathematics, 2024.<strong><font color="#FF0000">(中国数学会T2期刊)</font></strong></em>
+      <div class="periodical"><em>East Asian Journal on Applied Mathematics, 2024.</em>
       </div>
     <div class="links">
       <a href="assets/PDF/2024eajam.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
