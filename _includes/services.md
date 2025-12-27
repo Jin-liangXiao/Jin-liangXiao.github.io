@@ -23,6 +23,7 @@
 
 <ul>
   <li>Information Fusion</li>
+  <li>ISPRS Journal of Photogrammetry and Remote Sensing</li>
   <li>Pattern Recognition</li>
   <li>IEEE Transactions on Geoscience and Remote Sensing</li>
   <li>IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing</li>
