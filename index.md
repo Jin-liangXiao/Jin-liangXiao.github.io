@@ -11,7 +11,7 @@ In 2016 and 2017, I was a Joint-Training B.S. student in [School of Mathematical
 
 From Nov. 2023 to Oct. 2024, I was an intern with the Tensor Learning Team, [RIKEN AIP](https://www.riken.jp/en/research/labs/aip/), Tokyo, Japan, under the supervision of [Prof. Qibin Zhao](https://qibinzhao.github.io/).
  
-My research interest is mainly focusing on **image fusion**, **Tensor Learning**, **Deep Learning**.
+My research interest is mainly focusing on **Image Fusion**, **Tensor Learning**, **Deep Learning**.
 
 
 
