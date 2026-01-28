@@ -8,6 +8,26 @@
 
 
 
+<li>
+<div class="pub-row">
+  <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+    <img src="assets/img/aaai-26.jpg" width="200px" class="teaser img-fluid z-depth-1" style="">
+            <abbr class="badge">AAAI</abbr>
+  </div>
+  <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="https://arxiv.org/pdf/2508.07369">Training and Inference within 1 Second -- Tackle Cross-Sensor Degradation of Real-World Pansharpening with Efficient Residual Feature Tailoring</a></div>
+      <div class="author">Tianyu Xin#, <strong>Jin-Liang Xiao#</strong>, Zeyu Xia, Shan Yin, Liang-Jian Deng*</div>
+      <div class="periodical"><em>Association for the Advancement of Artificial Intelligence, 2026.<strong><font color="#FF0000">(CCF-A)</font></strong></em>
+      </div>
+    <div class="links">
+      <a href="https://arxiv.org/pdf/2508.07369" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
+    </div>
+  </div>
+</div>
+</li>
+
+
+
 
 <li>
 <div class="pub-row">
