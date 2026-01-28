@@ -40,6 +40,7 @@
 
 <ul>
   <li>National Scholarship for Ph. D. student (博士研究生国家奖学金), 2024</li>
+  <li>BYD Scholarship, 2025</li>
   <li>Academic Rookie (学术新秀), UESTC, 2025</li>
   <li>First-Class Academic Scholarship (学业一等奖学金), UESTC, 2024</li>
   <li>Second-Class Academic Scholarship (学业二等奖学金), UESTC, 2023</li>
