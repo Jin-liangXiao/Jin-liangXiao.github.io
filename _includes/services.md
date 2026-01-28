@@ -5,7 +5,7 @@
 
 <ul style="margin:0 0 5px;">
   <li>
-    <p>09/2022-Current: University of Electronic Science and Technology of China (UESTC); Ph. D. student in Mathematics (Supervisor: <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/">Prof. Liang-Jian Deng</a>)</p>
+    <p>09/2022-12/2025: University of Electronic Science and Technology of China (UESTC); Ph. D. student in Mathematics (Supervisor: <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/">Prof. Liang-Jian Deng</a>)</p>
   </li>
   <li>
     <p>09/2020-06/2022: University of Electronic Science and Technology of China (UESTC); Master student in Mathematics (Supervisor: <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/">Prof. Liang-Jian Deng</a>)</p>
