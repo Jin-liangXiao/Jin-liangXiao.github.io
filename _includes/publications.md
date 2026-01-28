@@ -17,7 +17,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://arxiv.org/pdf/2508.07369">Training and Inference within 1 Second -- Tackle Cross-Sensor Degradation of Real-World Pansharpening with Efficient Residual Feature Tailoring</a></div>
       <div class="author">Tianyu Xin#, <strong>Jin-Liang Xiao#</strong>, Zeyu Xia#, Shan Yin, Liang-Jian Deng*</div>
-      <div class="periodical"><em>Association for the Advancement of Artificial Intelligence, 2026.<strong><font color="#FF0000">(CCF-A)</font></strong></em>
+      <div class="periodical"><em>Association for the Advancement of Artificial Intelligence, 2026.</em>
       </div>
     <div class="links">
       <a href="https://arxiv.org/pdf/2508.07369" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
@@ -38,7 +38,7 @@
   <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
       <div class="title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.html">Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance</a></div>
       <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng, Guang Lin, Zihan Cao, Chao Li, Qibin Zhao*</div>
-      <div class="periodical"><em>The IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.
+      <div class="periodical"><em>The IEEE/CVF Conference on Computer Vision and Pattern Recognition, 2025.</em>
       </div>
     <div class="links">
       <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px;">PDF</a>
