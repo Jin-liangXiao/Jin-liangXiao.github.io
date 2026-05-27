@@ -1,4 +1,4 @@
-<div id="experiences">## Experiences
+## Experiences
 
 <h4 style="margin:0 10px 0;">Educations</h4>
 
@@ -18,9 +18,7 @@
   </li>
 </ul>
 
-</div>
-
-<div id="reviewer">## Reviewer
+## Reviewer
 
 
 <ul>
@@ -37,9 +35,7 @@
 </ul>
 
 
-</div>
-
-<div id="awards">## Awards and Honors
+## Awards and Honors
 
 
 <ul>
@@ -54,5 +50,3 @@
 
 
 
-
-</div>

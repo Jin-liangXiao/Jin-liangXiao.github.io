@@ -4,7 +4,6 @@ layout: homepage
 
 ## About Me
 
-<div id="about">
 I'm currently working at the [School of Mathematics](https://maths.swjtu.edu.cn/), [Southwest Jiaotong University](https://www.swjtu.edu.cn/).
 
 Before that, I got my Ph.D. degree (supervised by [Prof. Ting-Zhu Huang](https://www.math.uestc.edu.cn/info/1081/2041.htm) and [Prof. Liang-Jian Deng](https://liangjiandeng.github.io/)) in mathematics with the School of Mathematical Sciences, University of Electronic Science and Technology of China in 2025. I received the B.S. degree in mathematics and applied mathematics from the [Yunnan University](https://www.ynu.edu.cn), Kunming, Yunnan, China.
@@ -20,12 +19,10 @@ My research interest is mainly focusing on **Image Fusion**, **Tensor Learning**
 
 
 
-</div>
-
-<div id="publications">{% include_relative _includes/publications.md %}</div>
+{% include_relative _includes/publications.md %}
 
 
-<div id="services">{% include_relative _includes/services.md %}</div>
+{% include_relative _includes/services.md %}
 
 
 
