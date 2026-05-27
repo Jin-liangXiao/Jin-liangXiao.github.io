@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Scheme Preview</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Crimson Pro', serif; background: #f5f6fa; padding: 20px; color: #333; }
+  h1 { text-align: center; margin: 20px 0 30px; font-size: 2rem; font-weight: 500; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 24px; max-width: 1400px; margin: 0 auto; }
+  .card { background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.2s; }
+  .card:hover { transform: translateY(-2px); }
+
+  .card-preview { padding: 28px 24px 20px; }
+  .card-header { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 20px; }
+  .avatar { width: 64px; height: 64px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; color: #fff; font-weight: 700; font-family: 'Crimson Pro', serif; }
+  .info { flex: 1; }
+  .info h3 { font-size: 1.15rem; font-weight: 500; margin: 0 0 4px; }
+  .info .affil { font-size: 0.85rem; color: #777; margin-bottom: 8px; }
+  .socials { display: flex; gap: 6px; margin-top: 8px; }
+  .socials i { font-size: 1rem; opacity: 0.5; }
+
+  .citation-box { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 10px; margin-bottom: 16px; font-size: 0.85rem; }
+  .citation-box .num { font-size: 1.3rem; font-weight: 700; }
+
+  .toc { list-style: none; margin-bottom: 14px; }
+  .toc li { padding: 5px 10px; margin: 2px 0; border-radius: 6px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px; border-left: 3px solid transparent; }
+  .toc li i { width: 16px; text-align: center; font-size: 0.7rem; opacity: 0.6; }
+
+  .section { margin-top: 16px; }
+  .section-title { font-size: 1.05rem; font-weight: 500; margin-bottom: 6px; padding-bottom: 4px; position: relative; }
+  .section-title::after { content: ''; position: absolute; left: 0; bottom: 0; width: 36px; height: 3px; border-radius: 2px; }
+  .pub-item { padding: 10px 12px; border-radius: 8px; margin-bottom: 6px; font-size: 0.8rem; border: 1px solid; }
+  .pub-item .pub-title { font-weight: 600; margin-bottom: 3px; }
+  .pub-item .pub-meta { opacity: 0.7; font-size: 0.75rem; }
+  .badge-row { display: flex; gap: 4px; margin-top: 5px; }
+  .badge-item { padding: 2px 8px; border-radius: 4px; font-size: 0.65rem; font-weight: 600; color: #fff; }
+
+  .card-label { padding: 10px 24px; font-size: 0.9rem; font-weight: 600; color: #fff; }
+</style>
+</head>
+<body>
+
+<h1>学术主页配色方案预览</h1>
+<div class="grid" id="grid"></div>
+
+<script>
+const schemes = [
+  {
+    name: "经典海军蓝 · Classic Navy",
+    tag: "当前方案",
+    bg: "#fff", text: "#595959",
+    primary: "#002D72", accent: "#3eb7f0",
+    tBg: "#f0f4ff", tBorder: "#d0ddf5",
+    tocActiveBg: "#e8f0fe",
+    pubBg: "#fafbfc", pubBorder: "#eef0f4",
+    badgeBg: "#002D72",
+    gradFrom: "#002D72", gradTo: "#3eb7f0",
+    section: "沉稳、传统学术风"
+  },
+  {
+    name: "勃艮第金 · Burgundy Gold",
+    tag: "常春藤风",
+    bg: "#fff", text: "#595959",
+    primary: "#8B0000", accent: "#d4a843",
+    tBg: "#fdf5f5", tBorder: "#e8cccc",
+    tocActiveBg: "#f9e8e8",
+    pubBg: "#fcfaf8", pubBorder: "#f0e8d8",
+    badgeBg: "#8B0000",
+    gradFrom: "#8B0000", gradTo: "#d4a843",
+    section: "庄重、名校气质"
+  },
+  {
+    name: "森林绿 · Forest Green",
+    tag: "自然科学风",
+    bg: "#fff", text: "#595959",
+    primary: "#1a5632", accent: "#4caf50",
+    tBg: "#f2f9f3", tBorder: "#d0e8d3",
+    tocActiveBg: "#e4f3e6",
+    pubBg: "#f9fbf9", pubBorder: "#e4efe5",
+    badgeBg: "#1a5632",
+    gradFrom: "#1a5632", gradTo: "#4caf50",
+    section: "自然、生命科学"
+  },
+  {
+    name: "石板靛蓝 · Slate Indigo",
+    tag: "北欧极简",
+    bg: "#fff", text: "#555",
+    primary: "#3a4f6b", accent: "#6c8ebf",
+    tBg: "#f4f6fa", tBorder: "#dfe4ed",
+    tocActiveBg: "#e9edf5",
+    pubBg: "#fafbfd", pubBorder: "#eceff5",
+    badgeBg: "#3a4f6b",
+    gradFrom: "#3a4f6b", gradTo: "#6c8ebf",
+    section: "干净、北欧风格"
+  },
+  {
+    name: "纯黑极简 · Mono Dark",
+    tag: "设计师风",
+    bg: "#fafafa", text: "#555",
+    primary: "#1a1a1a", accent: "#666",
+    tBg: "#f5f5f5", tBorder: "#e0e0e0",
+    tocActiveBg: "#eee",
+    pubBg: "#fefefe", pubBorder: "#e8e8e8",
+    badgeBg: "#1a1a1a",
+    gradFrom: "#333", gradTo: "#999",
+    section: "极简、设计师感"
+  },
+  {
+    name: "Nord 冷调 · Nord Frost",
+    tag: "程序员圈热门",
+    bg: "#fff", text: "#4c566a",
+    primary: "#4c566a", accent: "#88c0d0",
+    tBg: "#f4f7fa", tBorder: "#d8dee9",
+    tocActiveBg: "#e5e9f0",
+    pubBg: "#fafbfc", pubBorder: "#e5e9f0",
+    badgeBg: "#4c566a",
+    gradFrom: "#4c566a", gradTo: "#88c0d0",
+    section: "冷静、技术社区风"
+  },
+  {
+    name: "青橙撞色 · Teal & Orange",
+    tag: "现代活力",
+    bg: "#fff", text: "#595959",
+    primary: "#007580", accent: "#ff7b42",
+    tBg: "#f2f9fa", tBorder: "#d0ebee",
+    tocActiveBg: "#e4f4f5",
+    pubBg: "#fafcf9", pubBorder: "#e8f0e5",
+    badgeBg: "#007580",
+    gradFrom: "#007580", gradTo: "#ff7b42",
+    section: "现代、有活力"
+  },
+  {
+    name: "深紫罗兰 · Deep Violet",
+    tag: "独特记忆点",
+    bg: "#fff", text: "#595959",
+    primary: "#4a148c", accent: "#ce93d8",
+    tBg: "#f7f3fc", tBorder: "#e8daf5",
+    tocActiveBg: "#f0e4fa",
+    pubBg: "#fcfafd", pubBorder: "#f0e8f5",
+    badgeBg: "#4a148c",
+    gradFrom: "#4a148c", gradTo: "#ce93d8",
+    section: "独特、有辨识度"
+  }
+];
+
+function render() {
+  const grid = document.getElementById('grid');
+  grid.innerHTML = schemes.map(s => `
+    <div class="card">
+      <div style="background:${s.bg};color:${s.text};min-height:380px">
+        <div class="card-preview">
+          <div class="card-header">
+            <div class="avatar" style="background:${s.primary}">肖</div>
+            <div>
+              <h3 style="color:${s.primary}">Jin-Liang Xiao</h3>
+              <div class="affil">SWJTU · School of Mathematics</div>
+              <div class="socials">
+                <i class="ai ai-google-scholar" style="color:${s.primary}"></i>
+                <i class="fab fa-github" style="color:${s.primary}"></i>
+                <i class="fab fa-researchgate" style="color:${s.primary}"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="citation-box" style="background:${s.tBg};border:1px solid ${s.tBorder}">
+            <i class="ai ai-google-scholar" style="font-size:1.2rem;color:${s.primary}"></i>
+            <span class="num" style="color:${s.primary}">285</span>
+            <span style="opacity:0.6;font-size:0.75rem">citations</span>
+          </div>
+
+          <ul class="toc">
+            ${['About','Publications','Experiences','Reviewer','Awards'].map((label,i) => `
+              <li style="color:${s.text}" onmouseover="this.style.background='${s.tocActiveBg}';this.style.borderLeftColor='${s.primary}'" onmouseout="this.style.background='transparent';this.style.borderLeftColor='transparent'">
+                <i class="fas fa-${['user','file-alt','briefcase','clipboard-check','trophy'][i]}"></i>${label}
+              </li>`).join('')}
+          </ul>
+
+          <div class="section">
+            <div class="section-title" style="color:${s.primary}">Publications</div>
+            <div class="pub-item" style="background:${s.pubBg};border-color:${s.pubBorder}">
+              <div class="pub-title" style="color:${s.primary}">Hyperspectral Pansharpening via Diffusion Models</div>
+              <div class="pub-meta">Jin-Liang Xiao et al. · CVPR 2025</div>
+              <div class="badge-row">
+                <span class="badge-item" style="background:${s.badgeBg}">CVPR</span>
+                <span style="font-size:0.7rem;opacity:0.6">PDF · Code · BibTex</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="section">
+            <div style="font-weight:500;margin-bottom:3px;position:relative;padding-bottom:3px">
+              <span style="color:${s.primary}">Awards</span>
+              <span style="display:block;width:30px;height:3px;background:linear-gradient(90deg,${s.gradFrom},${s.gradTo});border-radius:2px;margin-top:3px"></span>
+            </div>
+            <div style="font-size:0.78rem;opacity:0.75;padding-left:12px">
+              ◆ National Scholarship, 2024<br>
+              ◆ BYD Scholarship, 2025<br>
+              ◆ Academic Rookie, UESTC, 2025
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-label" style="background:linear-gradient(135deg,${s.primary},${s.accent})">
+        ${s.name}
+        ${s.tag ? '<span style="opacity:0.8;font-weight:400;font-size:0.8rem;margin-left:8px">— '+s.tag+'</span>' : ''}
+        <span style="float:right;opacity:0.7;font-weight:400;font-size:0.75rem">${s.section}</span>
+      </div>
+    </div>
+  `).join('');
+}
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Jin-Liang Xiao's Homepage — Preview</title>
+<meta name="description" content="Jin-Liang Xiao | SWJTU">
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css crossorigin=anonymous>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+/* ===== Base ===== */
+html { scroll-behavior: smooth; }
+body { background-color: #fff; padding: 0; font: 16px/1.5 'Crimson Pro', serif; color: #595959; font-weight: 400; margin: 0; }
+a { color: #39c; text-decoration: none; }
+a:hover { color: #069; }
+img { max-width: 100%; }
+h1 { font-weight: 500; color: #002D72; margin: 0 0 20px; font-size: 28px; }
+h2 { color: #002D72; font-weight: 500; margin: 2px 0 15px; font-size: 157%; }
+p, ul, ol, table, pre, dl { margin: 0 0 20px; }
+strong { color: #222; font-weight: 500; }
+
+/* ===== Layout ===== */
+.wrapper { width: 95%; margin: 0 auto; }
+header { width: 300px; float: left; position: fixed; padding-top: 5.5em; text-align: center; }
+section { width: auto; float: right; padding-top: 5.5em; margin-left: 270px; padding-bottom: 50px; }
+footer { width: 232px; float: left; position: fixed; bottom: 30px; text-align: center; }
+
+/* ===== Avatar ===== */
+.image.avatar { border-radius: 100%; }
+.image.avatar img { border-radius: 100%; width: 45%; padding: 20px; border: 3px solid #e8f0fe; box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+/* ===== Social Icons ===== */
+.social-icons a { display: inline-block; height: 2rem; width: 2rem; color: #002D72 !important; border-radius: 100%; text-align: center; font-size: 1.15rem; line-height: 2rem; margin-right: 0.5rem; }
+.social-icons a:hover { color: #069 !important; }
+
+/* ===== GS Citation Box ===== */
+.gs-citation-box { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 18px auto 8px; padding: 10px 16px; background: linear-gradient(135deg, #f0f4ff, #e8f0fe); border-radius: 12px; border: 1px solid #d0ddf5; max-width: 210px; }
+.gs-icon { font-size: 1.6rem; color: #002D72; }
+.gs-info { display: flex; flex-direction: column; align-items: center; line-height: 1.2; }
+.gs-count { font-size: 1.5rem; font-weight: 700; color: #002D72; }
+.gs-label { font-size: 0.7rem; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* ===== TOC ===== */
+.toc-nav { margin-top: 18px; text-align: left; padding: 0 12px; }
+.toc-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 8px; padding-left: 8px; }
+.toc-link { display: flex; align-items: center; gap: 8px; padding: 6px 10px; margin: 2px 0; border-radius: 8px; font-size: 0.88rem; color: #595959; text-decoration: none !important; transition: all 0.2s; border-left: 3px solid transparent; cursor: pointer; }
+.toc-link i { width: 18px; text-align: center; font-size: 0.75rem; color: #999; }
+.toc-link:hover { background: #f0f4ff; color: #002D72; }
+.toc-link:hover i { color: #002D72; }
+.toc-link.active { background: #e8f0fe; color: #002D72; font-weight: 600; border-left-color: #002D72; }
+.toc-link.active i { color: #002D72; }
+
+/* ===== Section Headings ===== */
+section h2 { position: relative; padding-bottom: 8px; margin-bottom: 18px; }
+section h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; background: linear-gradient(90deg, #002D72, #3eb7f0); border-radius: 2px; }
+h4 { font-weight: 600; color: #002D72; margin: 0 10px; }
+#about, #publications, #experiences, #reviewer, #awards { scroll-margin-top: 20px; }
+
+/* ===== Publications ===== */
+.badge { display: inline-block; padding: 0.25em 0.4em; font-size: 85%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; border-radius: 0.25rem; color: #fff !important; border-radius: 0.125rem; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); font-weight: 600 !important; letter-spacing: 0.6px; font-size: 78%; }
+abbr.badge { background-color: #002D72; }
+
+.pub-row { display: flex; align-items: center; transition: transform 0.25s, box-shadow 0.25s; border-radius: 12px; padding: 14px 16px; margin: 0 -4px 6px; background: #fafbfc; border: 1px solid #eef0f4; }
+.pub-row:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,45,114,0.10); border-color: #c8d6f0; }
+.teaser { border-radius: 8px; box-shadow: 3px 3px 10px rgba(0,0,0,0.12); width: 250px; height: auto; margin: 10px 5px; object-fit: cover; transition: transform 0.3s; }
+.pub-row:hover .teaser { transform: scale(1.03); }
+.col-sm-3 { padding: 0 15px; flex-shrink: 0; }
+.col-sm-9 { padding: 0 15px 0 20px; }
+.title { font-weight: bolder; }
+.title a { color: #002D72; }
+.author strong { color: #002D72; font-weight: 600; }
+.periodical { font-style: italic; color: #777; font-size: 0.9rem; margin: 4px 0; }
+.links a.btn { color: #000; border: 1px solid #000; padding: 0.1rem 0.5rem; font-size: 12px; border-radius: 6px; font-weight: 500; margin-right: 4px; transition: all 0.2s; }
+.links a.btn:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,0.12); color: #002D72; border-color: #002D72; }
+ol.bibliography { list-style: none; padding: 0; }
+
+/* ===== Experiences, Reviewer, Awards ===== */
+.section-block { margin-bottom: 28px; }
+.section-block ul { margin: 0 0 5px; }
+.section-block li { margin-bottom: 6px; }
+
+/* ===== ClustrMaps ===== */
+#clustrmaps-widget { margin-top: 20px; }
+
+/* ===== Mobile ===== */
+@media print, screen and (max-width: 960px) {
+  .toc-nav, .gs-citation-box { display: none; }
+  .wrapper { width: auto; margin: 0; }
+  header, section, footer { float: none; position: static; width: auto; }
+  header { padding-right: 320px; }
+  section { border: 1px solid #e5e5e5; border-width: 1px 0; padding: 20px 0; margin: 0 0 20px; }
+  .pub-row { flex-direction: column; align-items: flex-start; }
+  body { word-wrap: break-word; padding: 15px; }
+  .image.avatar img { width: 117px; padding: 20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <header>
+    <a class="image avatar"><img src="assets/img/img_yidou.jpeg" alt="avatar"></a>
+    <h1>Jin-Liang Xiao<br>(肖金良)</h1>
+    <div style="font-size:1.10rem;"></div>
+    <a href="https://www.swjtu.edu.cn/"><span style="color:#595959">SWJTU</span></a><br>
+    <span style="font-family:Ubuntu Mono;font-size:14px">jinliang_xiao@163.com<br>jinliangxiao@swjtu.edu.cn</span>
+    <br><br>
+    <div class="social-icons">
+      <a style="margin:0 5px 0 0" href="https://scholar.google.com.hk/citations?user=g5xlNmkAAAAJ&hl=zh-CN">
+        <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
+      </a>
+      <a style="margin:0 5px 0 0" href="https://github.com/Jin-liangXiao/">
+        <i class="fab fa-github"></i>
+      </a>
+      <a style="margin:0 0 0 0" href="https://www.researchgate.net/profile/Jin-Liang-Xiao">
+        <i class="fab fa-fw fa-researchgate"></i>
+      </a>
+    </div>
+    <br>
+
+    <!-- Google Scholar Citation Badge -->
+    <div class="gs-citation-box">
+      <div class="gs-icon"><i class="ai ai-google-scholar"></i></div>
+      <div class="gs-info">
+        <span class="gs-count" id="gs-citation-count">285</span>
+        <span class="gs-label">citations</span>
+      </div>
+    </div>
+
+    <!-- Table of Contents -->
+    <nav class="toc-nav">
+      <div class="toc-title">Contents</div>
+      <a class="toc-link" data-target="about"><i class="fas fa-user"></i> About</a>
+      <a class="toc-link" data-target="publications"><i class="fas fa-file-alt"></i> Publications</a>
+      <a class="toc-link" data-target="experiences"><i class="fas fa-briefcase"></i> Experiences</a>
+      <a class="toc-link" data-target="reviewer"><i class="fas fa-clipboard-check"></i> Reviewer</a>
+      <a class="toc-link" data-target="awards"><i class="fas fa-trophy"></i> Awards</a>
+    </nav>
+  </header>
+
+  <section>
+    <!-- ===== About Me ===== -->
+    <h2>About Me</h2>
+    <div id="about">
+      <p>I'm currently working at the <a href="https://maths.swjtu.edu.cn/">School of Mathematics</a>, <a href="https://www.swjtu.edu.cn/">Southwest Jiaotong University</a>.</p>
+      <p>Before that, I got my Ph.D. degree (supervised by <a href="https://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/">Prof. Liang-Jian Deng</a>) in mathematics with the School of Mathematical Sciences, University of Electronic Science and Technology of China in 2025. I received the B.S. degree in mathematics and applied mathematics from the <a href="https://www.ynu.edu.cn">Yunnan University</a>, Kunming, Yunnan, China. In 2016 and 2017, I was a Joint-Training B.S. student in <a href="https://math.fudan.edu.cn/">School of Mathematical Sciences, Fudan University</a>.</p>
+      <p>From Nov. 2023 to Oct. 2024, I was an intern with the Tensor Learning Team, <a href="https://www.riken.jp/en/research/labs/aip/">RIKEN AIP</a>, Tokyo, Japan, under the supervision of <a href="https://qibinzhao.github.io/">Prof. Qibin Zhao</a>.</p>
+      <p>My research interest is mainly focusing on <strong>Image Fusion</strong>, <strong>Tensor Learning</strong>, <strong>Deep Learning</strong>.</p>
+    </div>
+
+    <!-- ===== Publications ===== -->
+    <h2 id="pub-heading">Publications <span style="font-size:15px">[<a href="https://scholar.google.com.hk/citations?user=g5xlNmkAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a>]</span><span style="font-size:15px">[<a href="https://dblp.org/pid/318/0717.html" target="_blank">DBLP</a>]</span></h2>
+    <div id="publications">
+    <div class="publications">
+    <ol class="bibliography">
+
+    <li><div class="pub-row">
+      <div class="col-sm-3"><img src="assets/img/aaai-26.jpg" width="200px" class="teaser"><abbr class="badge">AAAI</abbr></div>
+      <div class="col-sm-9">
+        <div class="title"><a href="https://arxiv.org/pdf/2508.07369">Training and Inference within 1 Second — Tackle Cross-Sensor Degradation of Real-World Pansharpening with Efficient Residual Feature Tailoring</a></div>
+        <div class="author">Tianyu Xin#, <strong>Jin-Liang Xiao#</strong>, Zeyu Xia#, Shan Yin, Liang-Jian Deng*</div>
+        <div class="periodical">AAAI, 2026.</div>
+        <div class="links">
+          <a href="https://arxiv.org/pdf/2508.07369" class="btn btn-sm" target="_blank">PDF</a>
+          <a href="https://github.com/TorwnexialX/ERFT" class="btn btn-sm" target="_blank">Code</a>
+        </div>
+      </div>
+    </div></li>
+
+    <li><div class="pub-row">
+      <div class="col-sm-3"><img src="assets/img/cvpr25.jpg" width="200px" class="teaser"><abbr class="badge">CVPR</abbr></div>
+      <div class="col-sm-9">
+        <div class="title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.html">Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance</a></div>
+        <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng, Guang Lin, Zihan Cao, Chao Li, Qibin Zhao*</div>
+        <div class="periodical">CVPR, 2025.</div>
+        <div class="links">
+          <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.pdf" class="btn btn-sm" target="_blank">PDF</a>
+          <a href="https://github.com/Jin-liangXiao/DM-zs" class="btn btn-sm" target="_blank">Code</a>
+          <a href="#" class="btn btn-sm">BibTex</a>
+        </div>
+      </div>
+    </div></li>
+
+    <li><div class="pub-row">
+      <div class="col-sm-3"><img src="assets/img/ucl.jpg" width="200px" class="teaser"><abbr class="badge">IF</abbr></div>
+      <div class="col-sm-9">
+        <div class="title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528">Unsupervised coefficient learning framework for variational pansharpening</a></div>
+        <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Huidong Jiang, Qibin Zhao, and Gemine Vivone</div>
+        <div class="periodical">Information Fusion, 2025.</div>
+        <div class="links">
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528" class="btn btn-sm" target="_blank">PDF</a>
+          <a href="https://github.com/Jin-liangXiao/UCL" class="btn btn-sm" target="_blank">Code</a>
+          <a href="https://github.com/Jin-liangXiao/UCL" class="btn btn-sm" target="_blank">BibTex</a>
+        </div>
+      </div>
+    </div></li>
+
+    <li><div class="pub-row">
+      <div class="col-sm-3"><img src="assets/img/sfnlr.png" width="200px" class="teaser"><abbr class="badge">TGRS</abbr></div>
+      <div class="col-sm-9">
+        <div class="title"><a href="#">A Novel Nonconvex Low-Rank Regularization for Hyperspectral and Multispectral Image Fusion</a></div>
+        <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Hong-Xia Dou</div>
+        <div class="periodical">IEEE TGRS, 2023.</div>
+        <div class="links">
+          <a href="#" class="btn btn-sm">PDF</a>
+          <a href="https://github.com/Jin-liangXiao/SFNLR" class="btn btn-sm" target="_blank">Code</a>
+        </div>
+      </div>
+    </div></li>
+
+    <li><div class="pub-row">
+      <div class="col-sm-3"><img src="assets/img/cvpr_1.png" width="200px" class="teaser"><abbr class="badge">IPI</abbr></div>
+      <div class="col-sm-9">
+        <div class="title"><a href="#">A Variational Pansharpening Method Based on the L0-norm and Tensor Capped Nuclear Norm with Application</a></div>
+        <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Hong-Xia Dou</div>
+        <div class="periodical">Inverse Problems and Imaging, 2024.</div>
+        <div class="links">
+          <a href="assets/PDF/2024ipi.pdf" class="btn btn-sm" target="_blank">PDF</a>
+          <a href="https://github.com/Jin-liangXiao/L0-TC" class="btn btn-sm" target="_blank">Code</a>
+        </div>
+      </div>
+    </div></li>
+
+    <li><div class="pub-row">
+      <div class="col-sm-3"><img src="assets/img/eajam_tfr.png" width="200px" class="teaser"><abbr class="badge">EAJAM</abbr></div>
+      <div class="col-sm-9">
+        <div class="title"><a href="https://global-sci.com/article/91966/a-novel-nonconvex-rank-approximation-with-application-to-the-matrix-completion">A Novel Nonconvex Rank Approximation with Application to the Matrix Completion</a></div>
+        <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Zhong-Cheng Wu, and Liang-Jian Deng*</div>
+        <div class="periodical">East Asian Journal on Applied Mathematics, 2024.</div>
+        <div class="links">
+          <a href="assets/PDF/2024eajam.pdf" class="btn btn-sm" target="_blank">PDF</a>
+          <a href="https://github.com/Jin-liangXiao/TFR_code" class="btn btn-sm" target="_blank">Code</a>
+        </div>
+      </div>
+    </div></li>
+
+    <li><div class="pub-row">
+      <div class="col-sm-3"><img src="assets/img/igarss24.jpg" width="200px" class="teaser"><abbr class="badge">IGARSS</abbr></div>
+      <div class="col-sm-9">
+        <div class="title"><a href="https://ieeexplore.ieee.org/abstract/document/10642508">A Novel Fidelity Based on the Adaptive Domain for Pansharpening</a></div>
+        <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Ting Xu</div>
+        <div class="periodical">IEEE IGARSS, 2024.</div>
+        <div class="links">
+          <a href="assets/PDF/igarss-24.pdf" class="btn btn-sm" target="_blank">PDF</a>
+          <a href="assets/PDF/pan_igarss.pdf" class="btn btn-sm" target="_blank">Slide</a>
+        </div>
+      </div>
+    </div></li>
+
+    <li><div class="pub-row">
+      <div class="col-sm-3"><img src="assets/img/tgrs-25.jpg" width="200px" class="teaser"><abbr class="badge">GRSM</abbr></div>
+      <div class="col-sm-9">
+        <div class="title"><a href="https://ieeexplore.ieee.org/abstract/document/10778974">Deep Learning in Remote Sensing Image Fusion <strong><span style="color:#cc0000">(ESI Highly Cited Paper, Hot Cited Paper)</span></strong></a></div>
+        <div class="author">Gemine Vivone, Liang-Jian Deng, ..., <strong>Jin-Liang Xiao</strong>, et al.</div>
+        <div class="periodical">IEEE GRSM, 2024.</div>
+      </div>
+    </div></li>
+
+    </ol>
+    </div>
+    </div>
+
+    <!-- ===== Experiences ===== -->
+    <div id="experiences">
+    <h2>Experiences</h2>
+    <h4 style="margin:0 10px 0;">Educations</h4>
+    <ul style="margin:0 0 5px;">
+      <li><p>09/2022-12/2025: UESTC; Ph. D. student in Mathematics (Supervisor: <a href="http://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/">Prof. Liang-Jian Deng</a>)</p></li>
+      <li><p>09/2020-06/2022: UESTC; Master student in Mathematics</p></li>
+      <li><p>09/2016-06/2018: Fudan University; Joint-Training Bachelor student in Mathematics</p></li>
+      <li><p>09/2015-06/2019: Yunnan University; Bachelor student in Mathematics</p></li>
+    </ul>
+    </div>
+
+    <!-- ===== Reviewer ===== -->
+    <div id="reviewer" style="margin-top:28px">
+    <h2>Reviewer</h2>
+    <ul>
+      <li>AAAI, ACM MM, ...</li>
+      <li>Information Fusion</li>
+      <li>ISPRS Journal of Photogrammetry and Remote Sensing</li>
+      <li>Pattern Recognition</li>
+      <li>IEEE Transactions on Geoscience and Remote Sensing</li>
+      <li>Expert Systems With Applications</li>
+      <li>IEEE JSTARS</li>
+      <li>IEEE GRSL</li>
+      <li>Neurocomputing</li>
+    </ul>
+    </div>
+
+    <!-- ===== Awards ===== -->
+    <div id="awards" style="margin-top:28px">
+    <h2>Awards and Honors</h2>
+    <ul>
+      <li>Sichuan Province Outstanding Ph.D. Graduate, 2026</li>
+      <li>National Scholarship for Ph.D. student, 2024</li>
+      <li>BYD Scholarship, 2025</li>
+      <li>Academic Rookie (学术新秀), UESTC, 2025</li>
+      <li>First-Class Academic Scholarship (学业一等奖学金), UESTC, 2024</li>
+      <li>Special Postgraduate Scholarship of Science (理科特别奖学金), UESTC, 2022</li>
+    </ul>
+    </div>
+
+    <br>
+    <div id="clustrmaps-widget">
+      <small>Last Update: 27. May 2026</small>
+    </div>
+  </section>
+  <footer></footer>
+</div>
+
+<!-- Smooth scroll + active TOC highlight -->
+<script>
+(function() {
+  document.querySelectorAll('.toc-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.getElementById(this.dataset.target);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  var sections = [];
+  document.querySelectorAll('.toc-link').forEach(function(link) {
+    var el = document.getElementById(link.dataset.target);
+    if (el) sections.push({ link: link, el: el });
+  });
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        sections.forEach(function(s) {
+          s.link.classList.toggle('active', s.el === entry.target);
+        });
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px' });
+  sections.forEach(function(s) { observer.observe(s.el); });
+})();
+</script>
+</body>
+</html>

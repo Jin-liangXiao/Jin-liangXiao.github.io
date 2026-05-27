@@ -83,3 +83,87 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 
 
+
+/* ===== Enhanced Card UI ===== */
+.publications ol.bibliography li .pub-row {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin: 0 -4px 12px;
+  background: #fafbfc;
+  border: 1px solid #eef0f4;
+}
+.publications ol.bibliography li .pub-row:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 45, 114, 0.10);
+  border-color: #c8d6f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .publications ol.bibliography li .pub-row {
+    background: #252a3a;
+    border-color: #333a48;
+  }
+  .publications ol.bibliography li .pub-row:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    border-color: #3a4560;
+  }
+}
+
+/* ===== Badge color variants ===== */
+.badge {
+  font-weight: 600 !important;
+  letter-spacing: 0.6px;
+  font-size: 78%;
+}
+abbr.badge:contains("CVPR") {
+  background-color: #e74c3c !important;
+}
+.publications ol.bibliography li .abbr .badge {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== Link buttons enhancement ===== */
+.publications ol.bibliography li .links a.btn {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  margin-right: 4px;
+}
+.publications ol.bibliography li .links a.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+  color: var(--global-theme-color) !important;
+  border-color: var(--global-theme-color) !important;
+}
+
+/* ===== Teaser image improvements ===== */
+.publications ol.bibliography li .teaser {
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+.pub-row:hover .teaser {
+  transform: scale(1.03);
+}
+
+/* ===== Author highlight ===== */
+.publications ol.bibliography li .author strong {
+  color: #002D72;
+  font-weight: 600;
+}
+@media (prefers-color-scheme: dark) {
+  .publications ol.bibliography li .author strong {
+    color: #3eb7f0;
+  }
+}
+
+/* ===== Section spacing ===== */
+.publications h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* ===== ESI highlight ===== */
+.publications ol.bibliography li font[color="#FF0000"] strong {
+  color: #cc0000;
+}

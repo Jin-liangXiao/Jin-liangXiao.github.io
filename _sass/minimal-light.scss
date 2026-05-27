@@ -158,3 +158,239 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 .bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* ===== Google Scholar Citation Box ===== */
+.gs-citation-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 18px auto 8px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%);
+  border-radius: 12px;
+  border: 1px solid #d0ddf5;
+  max-width: 210px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.gs-citation-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 45, 114, 0.12);
+}
+.gs-icon {
+  font-size: 1.6rem;
+  color: #002D72;
+}
+.gs-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+.gs-count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #002D72;
+  transition: all 0.3s ease;
+}
+.gs-count.loaded {
+  animation: countPop 0.5s ease;
+}
+@keyframes countPop {
+  0% { transform: scale(0.8); opacity: 0; }
+  60% { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.gs-label {
+  font-size: 0.7rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Table of Contents ===== */
+.toc-nav {
+  margin-top: 18px;
+  text-align: left;
+  padding: 0 12px;
+}
+.toc-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  margin-bottom: 8px;
+  padding-left: 8px;
+}
+.toc-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  margin: 2px 0;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #595959;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+}
+.toc-link i {
+  width: 18px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #999;
+  transition: color 0.2s ease;
+}
+.toc-link:hover {
+  background: #f0f4ff;
+  color: #002D72;
+}
+.toc-link:hover i {
+  color: #002D72;
+}
+.toc-link.active {
+  background: #e8f0fe;
+  color: #002D72;
+  font-weight: 600;
+  border-left-color: #002D72;
+}
+.toc-link.active i {
+  color: #002D72;
+}
+
+/* ===== Dark Mode: TOC & Citation ===== */
+@media (prefers-color-scheme: dark) {
+  .gs-citation-box {
+    background: linear-gradient(135deg, #252a3a 0%, #1e2335 100%);
+    border-color: #3a4060;
+  }
+  .gs-icon {
+    color: #3eb7f0;
+  }
+  .gs-count {
+    color: #3eb7f0;
+  }
+  .gs-label {
+    color: #aaa;
+  }
+  .toc-title {
+    color: #777;
+  }
+  .toc-link {
+    color: #aaa;
+  }
+  .toc-link:hover {
+    background: #252a3a;
+    color: #3eb7f0;
+  }
+  .toc-link:hover i {
+    color: #3eb7f0;
+  }
+  .toc-link.active {
+    background: #252a3a;
+    color: #3eb7f0;
+    border-left-color: #3eb7f0;
+  }
+  .toc-link.active i {
+    color: #3eb7f0;
+  }
+}
+
+/* ===== Smooth Scroll ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== Section Dividers ===== */
+#about, #publications, #experiences, #reviewer, #awards {
+  scroll-margin-top: 20px;
+}
+section h2 {
+  position: relative;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #002D72, #3eb7f0);
+  border-radius: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  section h2::after {
+    background: linear-gradient(90deg, #3eb7f0, #60d0ff);
+  }
+}
+
+/* ===== Enhanced Publication Cards ===== */
+.publications ol.bibliography li .pub-row {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 0 -8px 8px;
+  background: #fafbfc;
+  border: 1px solid #eee;
+}
+.publications ol.bibliography li .pub-row:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border-color: #d0ddf5;
+}
+@media (prefers-color-scheme: dark) {
+  .publications ol.bibliography li .pub-row {
+    background: #252a3a;
+    border-color: #333;
+  }
+  .publications ol.bibliography li .pub-row:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    border-color: #3a4060;
+  }
+}
+
+/* ===== Enhanced Badge Style ===== */
+.badge {
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Button/link improvements ===== */
+.publications ol.bibliography li .links a.btn {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+.publications ol.bibliography li .links a.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Better Avatar ===== */
+.image.avatar img {
+  border: 3px solid #e8f0fe;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+.image.avatar img:hover {
+  transform: scale(1.03);
+}
+@media (prefers-color-scheme: dark) {
+  .image.avatar img {
+    border-color: #3a4060;
+  }
+}
+
+/* ===== Responsive TOC ===== */
+@media print, screen and (max-width: 960px) {
+  .toc-nav {
+    display: none;
+  }
+  .gs-citation-box {
+    display: none;
+  }
+}
