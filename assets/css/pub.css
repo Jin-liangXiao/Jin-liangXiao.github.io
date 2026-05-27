@@ -38,7 +38,7 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 
 .publications ol.bibliography { list-style: none; padding: 0; margin-top: 0; }
 
-.publications ol.bibliography li { min-height: 40px; margin-bottom: 1.5rem; }
+.publications ol.bibliography li { min-height: 40px; margin-bottom: 0.5rem; }
 
 .publications ol.bibliography li .abbr { height: 8rem; margin-bottom: 0.5rem; }
 
@@ -88,8 +88,8 @@ blockquote { background: var(--global-bg-color); border-left: 2px solid var(--gl
 .publications ol.bibliography li .pub-row {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   border-radius: 12px;
-  padding: 14px 16px;
-  margin: 0 -4px 12px;
+  padding: 8px 12px;
+  margin: 0 -4px 4px;
   background: #fafbfc;
   border: 1px solid #eef0f4;
 }
@@ -160,7 +160,7 @@ abbr.badge:contains("CVPR") {
 
 /* ===== Section spacing ===== */
 .publications h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* ===== ESI highlight ===== */
