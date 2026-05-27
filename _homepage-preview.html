@@ -54,7 +54,11 @@ footer { width: 282px; float: left; position: fixed; bottom: 30px; text-align: c
 
 /* ===== Section Headings ===== */
 section h2 { position: relative; padding-bottom: 8px; margin-bottom: 18px; }
-section h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; background: linear-gradient(90deg, #002D72, #3eb7f0); border-radius: 2px; }
+
+/* ===== Visit Counter Badge ===== */
+.visit-badge { display: inline-flex; align-items: center; border-radius: 8px; overflow: hidden; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 12px; line-height: 1; margin: 12px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12); }
+.visit-label { background: #002D72; color: #fff; padding: 6px 10px; font-weight: 600; letter-spacing: 0.6px; }
+.visit-count { background: #e8f0fe; color: #002D72; padding: 6px 10px; font-weight: 700; min-width: 40px; text-align: center; }section h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; background: linear-gradient(90deg, #002D72, #3eb7f0); border-radius: 2px; }
 h4 { font-weight: 600; color: #002D72; margin: 0 10px; }
 #about, #publications, #experiences, #reviewer, #awards { scroll-margin-top: 60px; }
 
@@ -270,8 +274,13 @@ abbr.badge { background-color: #002D72; }
     </div>
 
     <br>
+    <span id="busuanzi_container_site_uv" style="display:none;">
+      <span class="visit-badge">
+        <span class="visit-label">VISITS</span>
+        <span class="visit-count" id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
     <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_uv" style="font-size:13px;color:#999;">Visits: <span id="busuanzi_value_site_uv"></span></span>
     <small>Last Update: 27. May 2026</small>
   </section>
   <footer></footer>
