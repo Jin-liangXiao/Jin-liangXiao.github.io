@@ -3,6 +3,7 @@
   var countEl = document.getElementById('gs-citation-count');
   if (!countEl) return;
   var url = 'https://raw.githubusercontent.com/Jin-liangXiao/Jin-liangXiao.github.io/google-scholar-stats/gs_data_shieldsio.json';
+  var fallbackUrl = './assets/data/gs_data_shieldsio.json';
   fetch(url)
     .then(function(r) { return r.json(); })
     .then(function(d) {
@@ -12,7 +13,18 @@
       }
     })
     .catch(function() {
-      countEl.textContent = '—';
+      // fallback to local static data
+      fetch(fallbackUrl)
+        .then(function(r) { return r.json(); })
+        .then(function(d) {
+          if (d && d.message) {
+            countEl.textContent = d.message;
+            countEl.classList.add('loaded');
+          }
+        })
+        .catch(function() {
+          countEl.textContent = '—';
+        });
     });
 })();
 
