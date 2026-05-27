@@ -44,6 +44,19 @@
   <body>
     {% if site.enable_jhu_logo %}
 
+<!-- Top Navigation Bar -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <span class="top-nav-brand">Jin-Liang Xiao</span>
+    <div class="top-nav-links">
+      <a href="#about" class="top-nav-link" data-target="about">About</a>
+      <a href="#publications" class="top-nav-link" data-target="publications">Publications</a>
+      <a href="#experiences" class="top-nav-link" data-target="experiences">Experiences</a>
+      <a href="#reviewer" class="top-nav-link" data-target="reviewer">Reviewer</a>
+      <a href="#awards" class="top-nav-link" data-target="awards">Awards</a>
+    </div>
+  </div>
+</nav>
 
 
 
@@ -159,25 +172,6 @@
       <section>
 
 
-<!-- Table of Contents -->
-<nav class="toc-nav">
-  <div class="toc-title">Contents</div>
-  <a href="#about" class="toc-link" data-target="about">
-    <i class="fas fa-user"></i> About
-  </a>
-  <a href="#publications" class="toc-link" data-target="publications">
-    <i class="fas fa-file-alt"></i> Publications
-  </a>
-  <a href="#experiences" class="toc-link" data-target="experiences">
-    <i class="fas fa-briefcase"></i> Experiences
-  </a>
-  <a href="#reviewer" class="toc-link" data-target="reviewer">
-    <i class="fas fa-clipboard-check"></i> Reviewer
-  </a>
-  <a href="#awards" class="toc-link" data-target="awards">
-    <i class="fas fa-trophy"></i> Awards
-  </a>
-</nav>
 
       {{ content }}
 

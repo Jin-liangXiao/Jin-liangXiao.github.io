@@ -13,7 +13,6 @@
       }
     })
     .catch(function() {
-      // fallback to local static data
       fetch(fallbackUrl)
         .then(function(r) { return r.json(); })
         .then(function(d) {
@@ -28,8 +27,8 @@
     });
 })();
 
-// Smooth scroll for TOC links
-document.querySelectorAll('.toc-link').forEach(function(link) {
+// Smooth scroll for top nav links
+document.querySelectorAll('.top-nav-link').forEach(function(link) {
   link.addEventListener('click', function(e) {
     e.preventDefault();
     var target = document.getElementById(this.dataset.target);
@@ -42,7 +41,7 @@ document.querySelectorAll('.toc-link').forEach(function(link) {
 // Highlight current section on scroll
 (function() {
   var sections = [];
-  document.querySelectorAll('.toc-link').forEach(function(link) {
+  document.querySelectorAll('.top-nav-link').forEach(function(link) {
     var el = document.getElementById(link.dataset.target);
     if (el) sections.push({ link: link, el: el });
   });
@@ -54,6 +53,6 @@ document.querySelectorAll('.toc-link').forEach(function(link) {
         });
       }
     });
-  }, { rootMargin: '-20% 0px -70% 0px' });
+  }, { rootMargin: '-15% 0px -70% 0px' });
   sections.forEach(function(s) { observer.observe(s.el); });
 })();
