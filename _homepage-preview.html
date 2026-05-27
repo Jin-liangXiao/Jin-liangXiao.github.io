@@ -59,7 +59,7 @@ h4 { font-weight: 600; color: #002D72; margin: 0 10px; }
 #about, #publications, #experiences, #reviewer, #awards { scroll-margin-top: 60px; }
 
 /* ===== Publications ===== */
-.badge { display: inline-block; padding: 0.25em 0.4em; font-size: 85%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; border-radius: 0.25rem; color: #fff !important; border-radius: 0.125rem; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); font-weight: 600 !important; letter-spacing: 0.6px; font-size: 78%; }
+.badge { display: inline-block; padding: 0.25em 0.4em; font-size: 85%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; border-radius: 0.25rem; color: #fff !important; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); font-weight: 600 !important; letter-spacing: 0.6px; font-size: 78%; }
 abbr.badge { background-color: #002D72; }
 
 .pub-row { display: flex; align-items: center; transition: transform 0.25s, box-shadow 0.25s; border-radius: 12px; padding: 8px 12px; margin: 0 -4px 4px; background: #fafbfc; border: 1px solid #eef0f4; }
@@ -130,7 +130,6 @@ abbr.badge { background-color: #002D72; }
     </div>
     <br>
 
-    <!-- Google Scholar Citation Badge -->
     <div class="gs-citation-box">
       <div class="gs-icon"><i class="ai ai-google-scholar"></i></div>
       <div class="gs-info">
@@ -141,21 +140,16 @@ abbr.badge { background-color: #002D72; }
   </header>
 
   <section>
-    <!-- ===== About Me ===== -->
     <h2>About Me</h2>
     <div id="about">
       <p>I'm currently working at the <a href="https://maths.swjtu.edu.cn/">School of Mathematics</a>, <a href="https://www.swjtu.edu.cn/">Southwest Jiaotong University</a>.</p>
-      <p>Before that, I got my Ph.D. degree (supervised by <a href="https://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/">Prof. Liang-Jian Deng</a>) in mathematics with the School of Mathematical Sciences, University of Electronic Science and Technology of China in 2025. I received the B.S. degree in mathematics and applied mathematics from the <a href="https://www.ynu.edu.cn">Yunnan University</a>, Kunming, Yunnan, China. In 2016 and 2017, I was a Joint-Training B.S. student in <a href="https://math.fudan.edu.cn/">School of Mathematical Sciences, Fudan University</a>.</p>
-      <p>From Nov. 2023 to Oct. 2024, I was an intern with the Tensor Learning Team, <a href="https://www.riken.jp/en/research/labs/aip/">RIKEN AIP</a>, Tokyo, Japan, under the supervision of <a href="https://qibinzhao.github.io/">Prof. Qibin Zhao</a>.</p>
+      <p>Before that, I got my Ph.D. degree (supervised by <a href="https://www.math.uestc.edu.cn/info/1081/2041.htm">Prof. Ting-Zhu Huang</a> and <a href="https://liangjiandeng.github.io/">Prof. Liang-Jian Deng</a>) in mathematics with the School of Mathematical Sciences, University of Electronic Science and Technology of China in 2025.</p>
       <p>My research interest is mainly focusing on <strong>Image Fusion</strong>, <strong>Tensor Learning</strong>, <strong>Deep Learning</strong>.</p>
     </div>
 
-    <!-- ===== Publications ===== -->
     <div id="publications" style="margin-top:28px">
     <h2>Publications [<a href="https://scholar.google.com.hk/citations?user=g5xlNmkAAAAJ&hl=zh-CN&oi=sra" target="_blank" style="font-size:15px;">Google Scholar</a>][<a href="https://dblp.org/pid/318/0717.html" target="_blank" style="font-size:15px;">DBLP</a>]</h2>
-
-    <div class="publications">
-    <ol class="bibliography">
+    <div class="publications"><ol class="bibliography">
 
     <li><div class="pub-row">
       <div class="col-sm-3"><img src="assets/img/aaai-26.jpg" width="200px" class="teaser"><abbr class="badge">AAAI</abbr></div>
@@ -163,10 +157,7 @@ abbr.badge { background-color: #002D72; }
         <div class="title"><a href="https://arxiv.org/pdf/2508.07369">Training and Inference within 1 Second — Tackle Cross-Sensor Degradation of Real-World Pansharpening with Efficient Residual Feature Tailoring</a></div>
         <div class="author">Tianyu Xin#, <strong>Jin-Liang Xiao#</strong>, Zeyu Xia#, Shan Yin, Liang-Jian Deng*</div>
         <div class="periodical">AAAI, 2026.</div>
-        <div class="links">
-          <a href="https://arxiv.org/pdf/2508.07369" class="btn btn-sm" target="_blank">PDF</a>
-          <a href="https://github.com/TorwnexialX/ERFT" class="btn btn-sm" target="_blank">Code</a>
-        </div>
+        <div class="links"><a href="https://arxiv.org/pdf/2508.07369" class="btn btn-sm" target="_blank">PDF</a> <a href="https://github.com/TorwnexialX/ERFT" class="btn btn-sm" target="_blank">Code</a></div>
       </div>
     </div></li>
 
@@ -176,10 +167,7 @@ abbr.badge { background-color: #002D72; }
         <div class="title"><a href="https://openaccess.thecvf.com/content/CVPR2025/html/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.html">Hyperspectral Pansharpening via Diffusion Models with Iteratively Zero-Shot Guidance</a></div>
         <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng, Guang Lin, Zihan Cao, Chao Li, Qibin Zhao*</div>
         <div class="periodical">CVPR, 2025.</div>
-        <div class="links">
-          <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.pdf" class="btn btn-sm" target="_blank">PDF</a>
-          <a href="https://github.com/Jin-liangXiao/DM-zs" class="btn btn-sm" target="_blank">Code</a>
-        </div>
+        <div class="links"><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.pdf" class="btn btn-sm" target="_blank">PDF</a> <a href="https://github.com/Jin-liangXiao/DM-zs" class="btn btn-sm" target="_blank">Code</a></div>
       </div>
     </div></li>
 
@@ -189,10 +177,7 @@ abbr.badge { background-color: #002D72; }
         <div class="title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528">Unsupervised coefficient learning framework for variational pansharpening</a></div>
         <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Huidong Jiang, Qibin Zhao, and Gemine Vivone</div>
         <div class="periodical">Information Fusion, 2025.</div>
-        <div class="links">
-          <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528" class="btn btn-sm" target="_blank">PDF</a>
-          <a href="https://github.com/Jin-liangXiao/UCL" class="btn btn-sm" target="_blank">Code</a>
-        </div>
+        <div class="links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528" class="btn btn-sm" target="_blank">PDF</a> <a href="https://github.com/Jin-liangXiao/UCL" class="btn btn-sm" target="_blank">Code</a></div>
       </div>
     </div></li>
 
@@ -202,10 +187,7 @@ abbr.badge { background-color: #002D72; }
         <div class="title"><a href="https://ieeexplore.ieee.org/document/10778974">A Sparse-and-Fusion Nonlocal Rank Minimization for Pansharpening</a></div>
         <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Zihan Cao, Shan Yin</div>
         <div class="periodical">IEEE TGRS, 2025.</div>
-        <div class="links">
-          <a href="assets/PDF/2025tgrs.pdf" class="btn btn-sm" target="_blank">PDF</a>
-          <a href="https://github.com/Jin-liangXiao/SFNLR" class="btn btn-sm" target="_blank">Code</a>
-        </div>
+        <div class="links"><a href="assets/PDF/2025tgrs.pdf" class="btn btn-sm" target="_blank">PDF</a> <a href="https://github.com/Jin-liangXiao/SFNLR" class="btn btn-sm" target="_blank">Code</a></div>
       </div>
     </div></li>
 
@@ -215,10 +197,7 @@ abbr.badge { background-color: #002D72; }
         <div class="title"><a href="assets/PDF/2024ipi.pdf">L0-TC: A Novel L0-based Tensor Completion with Application</a></div>
         <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Hong-Xia Dou</div>
         <div class="periodical">Inverse Problems and Imaging, 2024.</div>
-        <div class="links">
-          <a href="assets/PDF/2024ipi.pdf" class="btn btn-sm" target="_blank">PDF</a>
-          <a href="https://github.com/Jin-liangXiao/L0-TC" class="btn btn-sm" target="_blank">Code</a>
-        </div>
+        <div class="links"><a href="assets/PDF/2024ipi.pdf" class="btn btn-sm" target="_blank">PDF</a> <a href="https://github.com/Jin-liangXiao/L0-TC" class="btn btn-sm" target="_blank">Code</a></div>
       </div>
     </div></li>
 
@@ -228,10 +207,7 @@ abbr.badge { background-color: #002D72; }
         <div class="title"><a href="https://global-sci.com/article/91966/a-novel-nonconvex-rank-approximation-with-application-to-the-matrix-completion">A Novel Nonconvex Rank Approximation with Application to the Matrix Completion</a></div>
         <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Zhong-Cheng Wu, and Liang-Jian Deng*</div>
         <div class="periodical">East Asian Journal on Applied Mathematics, 2024.</div>
-        <div class="links">
-          <a href="assets/PDF/2024eajam.pdf" class="btn btn-sm" target="_blank">PDF</a>
-          <a href="https://github.com/Jin-liangXiao/TFR_code" class="btn btn-sm" target="_blank">Code</a>
-        </div>
+        <div class="links"><a href="assets/PDF/2024eajam.pdf" class="btn btn-sm" target="_blank">PDF</a> <a href="https://github.com/Jin-liangXiao/TFR_code" class="btn btn-sm" target="_blank">Code</a></div>
       </div>
     </div></li>
 
@@ -241,10 +217,7 @@ abbr.badge { background-color: #002D72; }
         <div class="title"><a href="https://ieeexplore.ieee.org/abstract/document/10642508">A Novel Fidelity Based on the Adaptive Domain for Pansharpening</a></div>
         <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Ting Xu</div>
         <div class="periodical">IEEE IGARSS, 2024.</div>
-        <div class="links">
-          <a href="assets/PDF/igarss-24.pdf" class="btn btn-sm" target="_blank">PDF</a>
-          <a href="assets/PDF/pan_igarss.pdf" class="btn btn-sm" target="_blank">Slide</a>
-        </div>
+        <div class="links"><a href="assets/PDF/igarss-24.pdf" class="btn btn-sm" target="_blank">PDF</a> <a href="assets/PDF/pan_igarss.pdf" class="btn btn-sm" target="_blank">Slide</a></div>
       </div>
     </div></li>
 
@@ -257,11 +230,9 @@ abbr.badge { background-color: #002D72; }
       </div>
     </div></li>
 
-    </ol>
-    </div>
+    </ol></div>
     </div>
 
-    <!-- ===== Experiences ===== -->
     <div id="experiences">
     <h2>Experiences</h2>
     <h4 style="margin:0 10px 0;">Educations</h4>
@@ -273,7 +244,6 @@ abbr.badge { background-color: #002D72; }
     </ul>
     </div>
 
-    <!-- ===== Reviewer ===== -->
     <div id="reviewer" style="margin-top:28px">
     <h2>Reviewer</h2>
     <ul>
@@ -281,15 +251,12 @@ abbr.badge { background-color: #002D72; }
       <li>Information Fusion</li>
       <li>ISPRS Journal of Photogrammetry and Remote Sensing</li>
       <li>Pattern Recognition</li>
-      <li>IEEE Transactions on Geoscience and Remote Sensing</li>
+      <li>IEEE TGRS / JSTARS / GRSL</li>
       <li>Expert Systems With Applications</li>
-      <li>IEEE JSTARS</li>
-      <li>IEEE GRSL</li>
       <li>Neurocomputing</li>
     </ul>
     </div>
 
-    <!-- ===== Awards ===== -->
     <div id="awards" style="margin-top:28px">
     <h2>Awards and Honors</h2>
     <ul>
@@ -303,26 +270,21 @@ abbr.badge { background-color: #002D72; }
     </div>
 
     <br>
-    <div id="clustrmaps-widget">
-      <small>Last Update: 27. May 2026</small>
-    </div>
+    <script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=220&t=tt&d=MwjQzPd1PSzx3xs-WWr-OV2-QiszmmXRSrWYwXMBa-s"></script>
+    <small>Last Update: 27. May 2026</small>
   </section>
   <footer></footer>
 </div>
 
-<!-- Smooth scroll + active TOC highlight -->
 <script>
 (function() {
   document.querySelectorAll('.top-nav-link').forEach(function(link) {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       var target = document.getElementById(this.dataset.target);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
-
   var sections = [];
   document.querySelectorAll('.top-nav-link').forEach(function(link) {
     var el = document.getElementById(link.dataset.target);
