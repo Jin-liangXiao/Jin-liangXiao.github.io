@@ -23,10 +23,19 @@ p, ul, ol, table, pre, dl { margin: 0 0 20px; }
 strong { color: #222; font-weight: 500; }
 
 /* ===== Layout ===== */
-.wrapper { width: 95%; margin: 0 auto; }
-header { width: 300px; float: left; position: fixed; padding-top: 5.5em; text-align: center; }
-section { width: auto; float: right; padding-top: 5.5em; margin-left: 270px; padding-bottom: 50px; }
-footer { width: 232px; float: left; position: fixed; bottom: 30px; text-align: center; }
+.wrapper { width: 97%; margin: 0 auto; }
+header { width: 320px; float: left; position: fixed; padding-top: 5.5em; text-align: center; }
+section { width: auto; float: right; padding-top: 5.5em; margin-left: 350px; padding-bottom: 50px; }
+footer { width: 282px; float: left; position: fixed; bottom: 30px; text-align: center; }
+
+/* ===== Top Navigation Bar ===== */
+.top-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: linear-gradient(135deg, #002D72 0%, #003d8f 100%); box-shadow: 0 2px 16px rgba(0,0,0,0.12); }
+.top-nav-inner { max-width: 1400px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 48px; }
+.top-nav-brand { font-size: 1rem; font-weight: 600; color: #fff; letter-spacing: 0.5px; }
+.top-nav-links { display: flex; align-items: center; gap: 2px; }
+.top-nav-link { display: inline-flex; align-items: center; padding: 6px 14px; border-radius: 6px; font-size: 0.82rem; font-weight: 500; color: rgba(255,255,255,0.8); text-decoration: none !important; transition: all 0.2s; letter-spacing: 0.3px; cursor: pointer; }
+.top-nav-link:hover { background: rgba(255,255,255,0.15); color: #fff; }
+.top-nav-link.active { background: rgba(255,255,255,0.22); color: #fff; font-weight: 600; }
 
 /* ===== Avatar ===== */
 .image.avatar { border-radius: 100%; }
@@ -43,81 +52,81 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; text-align: c
 .gs-count { font-size: 1.5rem; font-weight: 700; color: #002D72; }
 .gs-label { font-size: 0.7rem; color: #666; text-transform: uppercase; letter-spacing: 0.5px; }
 
-/* ===== TOC ===== */
-.toc-nav { margin-top: 18px; text-align: left; padding: 0 12px; }
-.toc-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #999; margin-bottom: 8px; padding-left: 8px; }
-.toc-link { display: flex; align-items: center; gap: 8px; padding: 6px 10px; margin: 2px 0; border-radius: 8px; font-size: 0.88rem; color: #595959; text-decoration: none !important; transition: all 0.2s; border-left: 3px solid transparent; cursor: pointer; }
-.toc-link i { width: 18px; text-align: center; font-size: 0.75rem; color: #999; }
-.toc-link:hover { background: #f0f4ff; color: #002D72; }
-.toc-link:hover i { color: #002D72; }
-.toc-link.active { background: #e8f0fe; color: #002D72; font-weight: 600; border-left-color: #002D72; }
-.toc-link.active i { color: #002D72; }
-
 /* ===== Section Headings ===== */
 section h2 { position: relative; padding-bottom: 8px; margin-bottom: 18px; }
 section h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; background: linear-gradient(90deg, #002D72, #3eb7f0); border-radius: 2px; }
 h4 { font-weight: 600; color: #002D72; margin: 0 10px; }
-#about, #publications, #experiences, #reviewer, #awards { scroll-margin-top: 20px; }
+#about, #publications, #experiences, #reviewer, #awards { scroll-margin-top: 60px; }
 
 /* ===== Publications ===== */
 .badge { display: inline-block; padding: 0.25em 0.4em; font-size: 85%; font-weight: 700; line-height: 1; text-align: center; white-space: nowrap; border-radius: 0.25rem; color: #fff !important; border-radius: 0.125rem; box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12); font-weight: 600 !important; letter-spacing: 0.6px; font-size: 78%; }
 abbr.badge { background-color: #002D72; }
 
-.pub-row { display: flex; align-items: center; transition: transform 0.25s, box-shadow 0.25s; border-radius: 12px; padding: 14px 16px; margin: 0 -4px 6px; background: #fafbfc; border: 1px solid #eef0f4; }
+.pub-row { display: flex; align-items: center; transition: transform 0.25s, box-shadow 0.25s; border-radius: 12px; padding: 8px 12px; margin: 0 -4px 4px; background: #fafbfc; border: 1px solid #eef0f4; }
 .pub-row:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,45,114,0.10); border-color: #c8d6f0; }
 .teaser { border-radius: 8px; box-shadow: 3px 3px 10px rgba(0,0,0,0.12); width: 250px; height: auto; margin: 10px 5px; object-fit: cover; transition: transform 0.3s; }
 .pub-row:hover .teaser { transform: scale(1.03); }
 .col-sm-3 { padding: 0 15px; flex-shrink: 0; }
-.col-sm-9 { padding: 0 15px 0 20px; }
-.title { font-weight: bolder; }
-.title a { color: #002D72; }
+.col-sm-9 { padding: 0 15px; flex: 1; }
+.title { font-weight: bolder; font-size: 1.05rem; margin-bottom: 3px; }
+.author { font-size: 0.92rem; margin-bottom: 2px; }
 .author strong { color: #002D72; font-weight: 600; }
-.periodical { font-style: italic; color: #777; font-size: 0.9rem; margin: 4px 0; }
-.links a.btn { color: #000; border: 1px solid #000; padding: 0.1rem 0.5rem; font-size: 12px; border-radius: 6px; font-weight: 500; margin-right: 4px; transition: all 0.2s; }
-.links a.btn:hover { transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,0.12); color: #002D72; border-color: #002D72; }
-ol.bibliography { list-style: none; padding: 0; }
-
-/* ===== Experiences, Reviewer, Awards ===== */
+.periodical { font-size: 0.88rem; font-style: italic; color: #888; margin-bottom: 4px; }
+.links { margin-top: 4px; }
+.links a.btn { color: #000; border: 1px solid #000; padding: 0.1rem 0.5rem; border-radius: 6px; font-size: 0.78rem; font-weight: 500; margin-right: 4px; text-decoration: none; transition: all 0.2s; }
+.links a.btn:hover { color: #002D72; border-color: #002D72; transform: translateY(-1px); box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
 .section-block { margin-bottom: 28px; }
 .section-block ul { margin: 0 0 5px; }
 .section-block li { margin-bottom: 6px; }
 
-/* ===== ClustrMaps ===== */
-#clustrmaps-widget { margin-top: 20px; }
-
-/* ===== Mobile ===== */
+/* ===== Responsive ===== */
 @media print, screen and (max-width: 960px) {
-  .toc-nav, .gs-citation-box { display: none; }
-  .wrapper { width: auto; margin: 0; }
+  div.wrapper { width: auto; margin: 0; }
   header, section, footer { float: none; position: static; width: auto; }
-  header { padding-right: 320px; }
+  header { padding: 0; text-align: center; }
   section { border: 1px solid #e5e5e5; border-width: 1px 0; padding: 20px 0; margin: 0 0 20px; }
+  .top-nav-inner { padding: 0 16px; }
+  .top-nav-brand { font-size: 0.9rem; }
+  .top-nav-link { padding: 6px 10px; font-size: 0.75rem; }
+  .gs-citation-box { display: none; }
   .pub-row { flex-direction: column; align-items: flex-start; }
-  body { word-wrap: break-word; padding: 15px; }
-  .image.avatar img { width: 117px; padding: 20px; }
+  .teaser { width: 180px; }
+}
+@media print, screen and (max-width: 480px) {
+  body { padding: 15px; }
+  .pub-row { flex-direction: column; align-items: flex-start; }
+  .top-nav-inner { padding: 0 10px; }
+  .top-nav-link { padding: 5px 8px; font-size: 0.7rem; }
 }
 </style>
 </head>
 <body>
 
+<!-- Top Navigation Bar -->
+<nav class="top-nav">
+  <div class="top-nav-inner">
+    <span class="top-nav-brand">Jin-Liang Xiao</span>
+    <div class="top-nav-links">
+      <a href="#about" class="top-nav-link" data-target="about">About</a>
+      <a href="#publications" class="top-nav-link" data-target="publications">Publications</a>
+      <a href="#experiences" class="top-nav-link" data-target="experiences">Experiences</a>
+      <a href="#reviewer" class="top-nav-link" data-target="reviewer">Reviewer</a>
+      <a href="#awards" class="top-nav-link" data-target="awards">Awards</a>
+    </div>
+  </div>
+</nav>
+
 <div class="wrapper">
   <header>
     <a class="image avatar"><img src="assets/img/img_yidou.jpeg" alt="avatar"></a>
     <h1>Jin-Liang Xiao<br>(肖金良)</h1>
-    <div style="font-size:1.10rem;"></div>
-    <a href="https://www.swjtu.edu.cn/"><span style="color:#595959">SWJTU</span></a><br>
-    <span style="font-family:Ubuntu Mono;font-size:14px">jinliang_xiao@163.com<br>jinliangxiao@swjtu.edu.cn</span>
+    <a href="https://www.swjtu.edu.cn/"><autocolor>SWJTU</autocolor></a><br>
+    <email>jinliang_xiao@163.com<br>jinliangxiao@swjtu.edu.cn</email>
     <br><br>
     <div class="social-icons">
-      <a style="margin:0 5px 0 0" href="https://scholar.google.com.hk/citations?user=g5xlNmkAAAAJ&hl=zh-CN">
-        <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
-      </a>
-      <a style="margin:0 5px 0 0" href="https://github.com/Jin-liangXiao/">
-        <i class="fab fa-github"></i>
-      </a>
-      <a style="margin:0 0 0 0" href="https://www.researchgate.net/profile/Jin-Liang-Xiao">
-        <i class="fab fa-fw fa-researchgate"></i>
-      </a>
+      <a href="https://scholar.google.com.hk/citations?user=g5xlNmkAAAAJ&hl=zh-CN"><i class="ai ai-google-scholar" style="font-size:1.2rem"></i></a>
+      <a href="https://github.com/Jin-liangXiao/"><i class="fab fa-github"></i></a>
+      <a href="https://www.researchgate.net/profile/Jin-Liang-Xiao"><i class="fab fa-researchgate"></i></a>
     </div>
     <br>
 
@@ -129,16 +138,6 @@ ol.bibliography { list-style: none; padding: 0; }
         <span class="gs-label">citations</span>
       </div>
     </div>
-
-    <!-- Table of Contents -->
-    <nav class="toc-nav">
-      <div class="toc-title">Contents</div>
-      <a class="toc-link" data-target="about"><i class="fas fa-user"></i> About</a>
-      <a class="toc-link" data-target="publications"><i class="fas fa-file-alt"></i> Publications</a>
-      <a class="toc-link" data-target="experiences"><i class="fas fa-briefcase"></i> Experiences</a>
-      <a class="toc-link" data-target="reviewer"><i class="fas fa-clipboard-check"></i> Reviewer</a>
-      <a class="toc-link" data-target="awards"><i class="fas fa-trophy"></i> Awards</a>
-    </nav>
   </header>
 
   <section>
@@ -152,8 +151,9 @@ ol.bibliography { list-style: none; padding: 0; }
     </div>
 
     <!-- ===== Publications ===== -->
-    <h2 id="pub-heading">Publications <span style="font-size:15px">[<a href="https://scholar.google.com.hk/citations?user=g5xlNmkAAAAJ&hl=zh-CN&oi=sra" target="_blank">Google Scholar</a>]</span><span style="font-size:15px">[<a href="https://dblp.org/pid/318/0717.html" target="_blank">DBLP</a>]</span></h2>
-    <div id="publications">
+    <div id="publications" style="margin-top:28px">
+    <h2>Publications [<a href="https://scholar.google.com.hk/citations?user=g5xlNmkAAAAJ&hl=zh-CN&oi=sra" target="_blank" style="font-size:15px;">Google Scholar</a>][<a href="https://dblp.org/pid/318/0717.html" target="_blank" style="font-size:15px;">DBLP</a>]</h2>
+
     <div class="publications">
     <ol class="bibliography">
 
@@ -179,7 +179,6 @@ ol.bibliography { list-style: none; padding: 0; }
         <div class="links">
           <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Xiao_Hyperspectral_Pansharpening_via_Diffusion_Models_with_Iteratively_Zero-Shot_Guidance_CVPR_2025_paper.pdf" class="btn btn-sm" target="_blank">PDF</a>
           <a href="https://github.com/Jin-liangXiao/DM-zs" class="btn btn-sm" target="_blank">Code</a>
-          <a href="#" class="btn btn-sm">BibTex</a>
         </div>
       </div>
     </div></li>
@@ -193,7 +192,6 @@ ol.bibliography { list-style: none; padding: 0; }
         <div class="links">
           <a href="https://www.sciencedirect.com/science/article/abs/pii/S1566253525008528" class="btn btn-sm" target="_blank">PDF</a>
           <a href="https://github.com/Jin-liangXiao/UCL" class="btn btn-sm" target="_blank">Code</a>
-          <a href="https://github.com/Jin-liangXiao/UCL" class="btn btn-sm" target="_blank">BibTex</a>
         </div>
       </div>
     </div></li>
@@ -201,20 +199,20 @@ ol.bibliography { list-style: none; padding: 0; }
     <li><div class="pub-row">
       <div class="col-sm-3"><img src="assets/img/sfnlr.png" width="200px" class="teaser"><abbr class="badge">TGRS</abbr></div>
       <div class="col-sm-9">
-        <div class="title"><a href="#">A Novel Nonconvex Low-Rank Regularization for Hyperspectral and Multispectral Image Fusion</a></div>
-        <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Hong-Xia Dou</div>
-        <div class="periodical">IEEE TGRS, 2023.</div>
+        <div class="title"><a href="https://ieeexplore.ieee.org/document/10778974">A Sparse-and-Fusion Nonlocal Rank Minimization for Pansharpening</a></div>
+        <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Zihan Cao, Shan Yin</div>
+        <div class="periodical">IEEE TGRS, 2025.</div>
         <div class="links">
-          <a href="#" class="btn btn-sm">PDF</a>
+          <a href="assets/PDF/2025tgrs.pdf" class="btn btn-sm" target="_blank">PDF</a>
           <a href="https://github.com/Jin-liangXiao/SFNLR" class="btn btn-sm" target="_blank">Code</a>
         </div>
       </div>
     </div></li>
 
     <li><div class="pub-row">
-      <div class="col-sm-3"><img src="assets/img/cvpr_1.png" width="200px" class="teaser"><abbr class="badge">IPI</abbr></div>
+      <div class="col-sm-3"><img src="assets/img/ipi-24.jpg" width="200px" class="teaser"><abbr class="badge">IPI</abbr></div>
       <div class="col-sm-9">
-        <div class="title"><a href="#">A Variational Pansharpening Method Based on the L0-norm and Tensor Capped Nuclear Norm with Application</a></div>
+        <div class="title"><a href="assets/PDF/2024ipi.pdf">L0-TC: A Novel L0-based Tensor Completion with Application</a></div>
         <div class="author"><strong>Jin-Liang Xiao</strong>, Ting-Zhu Huang*, Liang-Jian Deng*, Hong-Xia Dou</div>
         <div class="periodical">Inverse Problems and Imaging, 2024.</div>
         <div class="links">
@@ -315,7 +313,7 @@ ol.bibliography { list-style: none; padding: 0; }
 <!-- Smooth scroll + active TOC highlight -->
 <script>
 (function() {
-  document.querySelectorAll('.toc-link').forEach(function(link) {
+  document.querySelectorAll('.top-nav-link').forEach(function(link) {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       var target = document.getElementById(this.dataset.target);
@@ -326,7 +324,7 @@ ol.bibliography { list-style: none; padding: 0; }
   });
 
   var sections = [];
-  document.querySelectorAll('.toc-link').forEach(function(link) {
+  document.querySelectorAll('.top-nav-link').forEach(function(link) {
     var el = document.getElementById(link.dataset.target);
     if (el) sections.push({ link: link, el: el });
   });
@@ -338,7 +336,7 @@ ol.bibliography { list-style: none; padding: 0; }
         });
       }
     });
-  }, { rootMargin: '-20% 0px -70% 0px' });
+  }, { rootMargin: '-15% 0px -70% 0px' });
   sections.forEach(function(s) { observer.observe(s.el); });
 })();
 </script>
