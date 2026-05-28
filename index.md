@@ -2,6 +2,8 @@
 layout: homepage
 ---
 
+<a id="about"></a>
+
 ## About Me
 
 I'm currently working at the [School of Mathematics](https://maths.swjtu.edu.cn/), [Southwest Jiaotong University](https://www.swjtu.edu.cn/).
