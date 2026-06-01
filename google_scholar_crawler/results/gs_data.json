@@ -1,0 +1,115 @@
+{
+  "scholar_id": "g5xlNmkAAAAJ",
+  "name": "Jin-Liang Xiao",
+  "citedby": 208,
+  "citedby5y": 208,
+  "hindex": 5,
+  "hindex5y": 5,
+  "i10index": 4,
+  "i10index5y": 4,
+  "cites_per_year": {
+    "2023": 4,
+    "2024": 18,
+    "2025": 99,
+    "2026": 86
+  },
+  "publications": {
+    "g5xlNmkAAAAJ:MXK_kJrjxJIC": {
+      "author_pub_id": "g5xlNmkAAAAJ:MXK_kJrjxJIC",
+      "num_citations": 84,
+      "title": "Deep learning in remote sensing image fusion: Methods, protocols, data, and future perspectives",
+      "year": "2024"
+    },
+    "g5xlNmkAAAAJ:roLk4NBRz8UC": {
+      "author_pub_id": "g5xlNmkAAAAJ:roLk4NBRz8UC",
+      "num_citations": 49,
+      "title": "A coupled tensor double-factor method for hyperspectral and multispectral image fusion",
+      "year": "2024"
+    },
+    "g5xlNmkAAAAJ:Tyk-4Ss8FVUC": {
+      "author_pub_id": "g5xlNmkAAAAJ:Tyk-4Ss8FVUC",
+      "num_citations": 43,
+      "title": "Variational pansharpening based on coefficient estimation with nonlocal regression",
+      "year": "2023"
+    },
+    "g5xlNmkAAAAJ:YOwf2qJgpHMC": {
+      "author_pub_id": "g5xlNmkAAAAJ:YOwf2qJgpHMC",
+      "num_citations": 10,
+      "title": "Hyperspectral pansharpening via diffusion models with iteratively zero-shot guidance",
+      "year": "2025"
+    },
+    "g5xlNmkAAAAJ:M3ejUd6NZC8C": {
+      "author_pub_id": "g5xlNmkAAAAJ:M3ejUd6NZC8C",
+      "num_citations": 7,
+      "title": "Unsupervised coefficient learning framework for variational pansharpening",
+      "year": "2025"
+    },
+    "g5xlNmkAAAAJ:Se3iqnhoufwC": {
+      "author_pub_id": "g5xlNmkAAAAJ:Se3iqnhoufwC",
+      "num_citations": 4,
+      "title": "A novel  minimization framework of tensor tubal rank and its multi-dimensional image completion application",
+      "year": "2024"
+    },
+    "g5xlNmkAAAAJ:ULOm3_A8WrAC": {
+      "author_pub_id": "g5xlNmkAAAAJ:ULOm3_A8WrAC",
+      "num_citations": 3,
+      "title": "A novel nonconvex rank approximation with application to the matrix completion",
+      "year": "2025"
+    },
+    "g5xlNmkAAAAJ:_kc_bZDykSQC": {
+      "author_pub_id": "g5xlNmkAAAAJ:_kc_bZDykSQC",
+      "num_citations": 2,
+      "title": "Pansharpening Variational Model Based on Internal Adaptive Spatial Fidelity and External Deep-Driven Injection",
+      "year": "2025"
+    },
+    "g5xlNmkAAAAJ:5nxA0vEk-isC": {
+      "author_pub_id": "g5xlNmkAAAAJ:5nxA0vEk-isC",
+      "num_citations": 2,
+      "title": "Endmember Distinguished Low-Rank and Sparse Representation for Hyperspectral Unmixing",
+      "year": "2024"
+    },
+    "g5xlNmkAAAAJ:0EnyYjriUFMC": {
+      "author_pub_id": "g5xlNmkAAAAJ:0EnyYjriUFMC",
+      "num_citations": 2,
+      "title": "A novel fidelity based on the adaptive domain for pansharpening",
+      "year": "2024"
+    },
+    "g5xlNmkAAAAJ:4TOpqqG69KYC": {
+      "author_pub_id": "g5xlNmkAAAAJ:4TOpqqG69KYC",
+      "num_citations": 1,
+      "title": "Training and inference within 1 second–tackle cross-sensor degradation of real-world pansharpening with efficient residual feature tailoring",
+      "year": "2026"
+    },
+    "g5xlNmkAAAAJ:qxL8FJ1GzNcC": {
+      "author_pub_id": "g5xlNmkAAAAJ:qxL8FJ1GzNcC",
+      "num_citations": 1,
+      "title": "Bi^ 2MAC: Bimodal Bi-Adaptive Mask-Aware Convolution for Remote Sensing Pansharpening",
+      "year": "2025"
+    },
+    "g5xlNmkAAAAJ:4DMP91E08xMC": {
+      "author_pub_id": "g5xlNmkAAAAJ:4DMP91E08xMC",
+      "num_citations": 0,
+      "title": "Fast Model-guided Instance-wise Adaptation Framework for Real-world Pansharpening with Fidelity Constraints",
+      "year": "2026"
+    },
+    "g5xlNmkAAAAJ:Zph67rFs4hoC": {
+      "author_pub_id": "g5xlNmkAAAAJ:Zph67rFs4hoC",
+      "num_citations": 0,
+      "title": "CAT: A Conditional Adaptation Tailor for Efficient and Effective Instance-Specific Pansharpening on Real-World Data",
+      "year": "2025"
+    },
+    "g5xlNmkAAAAJ:3fE2CSJIrl8C": {
+      "author_pub_id": "g5xlNmkAAAAJ:3fE2CSJIrl8C",
+      "num_citations": 0,
+      "title": "QUANTA Series",
+      "year": "2025"
+    },
+    "g5xlNmkAAAAJ:kNdYIx-mwKoC": {
+      "author_pub_id": "g5xlNmkAAAAJ:kNdYIx-mwKoC",
+      "num_citations": 0,
+      "title": "A new context-aware details injection fidelity with adaptive coefficients estimation for variational pansharpening",
+      "year": "2022"
+    }
+  },
+  "updated": "2026-06-01 17:31:13.470004"
+}
