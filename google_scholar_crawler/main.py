@@ -196,6 +196,11 @@ def main():
         print("       The workflow will keep the previous data on the google-scholar-stats branch.")
         sys.exit(1)
 
+    # Clean old result files
+    import glob
+    for f in glob.glob(os.path.join(RESULTS_DIR, "gs_data*.json")):
+        os.remove(f)
+
     print(f"\n  Name:              {author['name']}")
     print(f"  Total citations:   {author['citedby']}")
     print(f"  h-index:           {author['hindex']}")
