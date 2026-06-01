@@ -1,27 +1,39 @@
 name: Get Citation Data
 
 on: 
- page_build: 
- schedule:
-  - cron:  '0 8 * * *'
+  page_build: 
+  schedule:
+    - cron: '0 8 * * *'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install Reqs
+
+    - name: Install Python dependencies
       run: |
-        sudo apt-get install python3-setuptools
-    - name: Run
+        python3 -m pip install --upgrade pip
+        pip3 install -r google_scholar_crawler/requirements.txt
+
+    - name: Run Google Scholar crawler
+      env:
+        # Pass no proxy in CI; GitHub Actions has direct internet access
+        HTTP_PROXY: ""
+        HTTPS_PROXY: ""
+        http_proxy: ""
+        https_proxy: ""
       run: |
-        cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
+        cd google_scholar_crawler
         python3 main.py
-        cd ./results
+
+    - name: Push results to google-scholar-stats branch
+      run: |
+        cd google_scholar_crawler/results
         git init
         git config --local user.name "${GITHUB_ACTOR}"
+        git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
         export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
         git add *.json
-        git commit -m "Updated Citation Data"
+        git commit -m "Update citation data $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
         git push "${remote_repo}" HEAD:google-scholar-stats --force
