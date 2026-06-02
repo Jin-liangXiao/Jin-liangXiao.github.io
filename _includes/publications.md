@@ -232,7 +232,7 @@
 
  <li>
     <p><a href="https://ieeexplore.ieee.org/abstract/document/11538234">Hyperspectral and Multispectral Image Fusion via Coupled Tensor Wheel Decomposition </a> <br />
-      Ting Xu, <strong>Jin-Liang Xiao</strong>, Ya-Ru Fan, Liu Liu, Liang-Jian Deng <br />
+      Ting Xu, <strong>Jin-Liang Xiao</strong>, Ya-Ru Fan, Liu Liu, Liang-Jian Deng*<br />
 <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024. </p>
   </li>
 
