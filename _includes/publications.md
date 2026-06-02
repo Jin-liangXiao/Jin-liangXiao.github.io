@@ -233,7 +233,7 @@
  <li>
     <p><a href="https://ieeexplore.ieee.org/abstract/document/11538234">Hyperspectral and Multispectral Image Fusion via Coupled Tensor Wheel Decomposition </a> <br />
       Ting Xu, <strong>Jin-Liang Xiao</strong>, Ya-Ru Fan, Liu Liu, Liang-Jian Deng*<br />
-<em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2024. </p>
+<em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2026. </p>
   </li>
 
 
@@ -242,7 +242,7 @@
  <li>
     <p><a href="https://ieeexplore.ieee.org/abstract/document/10778974">Deep Learning in Remote Sensing Image Fusion: Methods, protocols, data, and future perspectives <strong><font color="#FF0000">(ESI Highly Cited Paper, Hot Cited Paper)</font></strong></a> <br />
 Gemine Vivone, Liang-Jian Deng, Shangqi Deng, Danfeng Hong, Menghui Jiang, Chenyu Li, Wei Li, Huanfeng Shen, Xiao Wu, <strong>Jin-Liang Xiao</strong>, Jing Yao, Mengmeng Zhang, Jocelyn Chanussot, Salvador García, Antonio Plaza <br />
-<em>IEEE Geoscience and Remote Sensing Magazine</em>, 2026. </p>
+<em>IEEE Geoscience and Remote Sensing Magazine</em>, 2024. </p>
   </li>
 
 
