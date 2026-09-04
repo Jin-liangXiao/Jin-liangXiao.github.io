@@ -4,23 +4,29 @@
   if (!countEl) return;
   var url = 'https://raw.githubusercontent.com/Jin-liangXiao/Jin-liangXiao.github.io/google-scholar-stats/gs_data_shieldsio.json';
   var fallbackUrl = './assets/data/gs_data_shieldsio.json';
+
+  function setCount(data) {
+    var count = Number(data && data.message);
+    if (!Number.isFinite(count) || count <= 0) {
+      throw new Error('Invalid Google Scholar citation count');
+    }
+    countEl.textContent = String(count);
+    countEl.classList.add('loaded');
+  }
+
   fetch(url)
-    .then(function(r) { return r.json(); })
-    .then(function(d) {
-      if (d && d.message) {
-        countEl.textContent = d.message;
-        countEl.classList.add('loaded');
-      }
+    .then(function(r) {
+      if (!r.ok) throw new Error('Citation data request failed');
+      return r.json();
     })
+    .then(setCount)
     .catch(function() {
       fetch(fallbackUrl)
-        .then(function(r) { return r.json(); })
-        .then(function(d) {
-          if (d && d.message) {
-            countEl.textContent = d.message;
-            countEl.classList.add('loaded');
-          }
+        .then(function(r) {
+          if (!r.ok) throw new Error('Fallback citation request failed');
+          return r.json();
         })
+        .then(setCount)
         .catch(function() {
           countEl.textContent = '—';
         });

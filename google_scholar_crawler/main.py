@@ -20,6 +20,11 @@ except ImportError:
 # ── Config ──────────────────────────────────────────────────────────────
 USER_ID = "g5xlNmkAAAAJ"
 RESULTS_DIR = "results"
+SCHOLAR_HOSTS = (
+    "scholar.google.com",
+    "scholar.google.com.hk",
+    "scholar.google.co.uk",
+)
 
 # Papers to track individually by title (matched case-insensitively).
 #  Key = short label for output filename, Value = paper title to match.
@@ -27,7 +32,7 @@ TRACKED_PAPERS = {
     # Top-cited papers on the current profile.
     # Edit these to track specific papers on your Google Scholar profile.
     # Key = short filename label, Value = exact paper title (case-insensitive match).
-    "dl_rs_fusion": "Deep learning in remote sensing image fusion: Methods, protocols, data, and future prospects",
+    "dl_rs_fusion": "Deep learning in remote sensing image fusion: Methods, protocols, data, and future perspectives",
     "ctdf": "A coupled tensor double-factor method for hyperspectral and multispectral image fusion",
     "vp": "Variational pansharpening based on coefficient estimation with nonlocal regression",
     "hs_diffusion": "Hyperspectral pansharpening via diffusion models with iteratively zero-shot guidance",
@@ -50,17 +55,9 @@ TIMEOUT = 20
 # ── HTTP session ────────────────────────────────────────────────────────
 def _build_session() -> requests.Session:
     session = requests.Session()
-    session.trust_env = False
-    # Respect system proxy if set (common in CN)
-    http_proxy = os.environ.get("HTTP_PROXY") or os.environ.get("http_proxy")
-    https_proxy = os.environ.get("HTTPS_PROXY") or os.environ.get("https_proxy")
-    if http_proxy or https_proxy:
-        proxies = {}
-        if http_proxy:
-            proxies["http"] = http_proxy
-        if https_proxy:
-            proxies["https"] = https_proxy
-        session.proxies.update(proxies)
+    # Use standard environment or operating-system proxy settings when present.
+    # The GitHub workflow explicitly clears HTTP(S)_PROXY for its direct access.
+    session.trust_env = True
     return session
 
 
@@ -90,46 +87,89 @@ def _extract_citation_count(row_tag) -> int:
     return 0
 
 
+def _parse_count(value: str) -> Optional[int]:
+    """Parse a Scholar count while tolerating thousands separators."""
+    digits = re.sub(r"[^0-9]", "", value or "")
+    return int(digits) if digits else None
+
+
+def _extract_profile_summary(soup) -> tuple[Optional[str], Optional[int]]:
+    """Extract the profile name and total citations from a real profile page."""
+    name_el = soup.find("div", id="gsc_prf_in")
+    name = name_el.get_text(strip=True) if name_el else None
+
+    if not name:
+        title_meta = soup.find("meta", property="og:title")
+        if title_meta:
+            name = title_meta.get("content", "").strip() or None
+
+    stats_tds = soup.find_all("td", class_="gsc_rsb_std")
+    citedby = _parse_count(stats_tds[0].get_text()) if stats_tds else None
+
+    # Scholar also publishes the total in the profile description. This is a
+    # useful fallback when the visible statistics table is rendered differently.
+    if citedby is None:
+        description = soup.find("meta", attrs={"name": "description"})
+        description_text = description.get("content", "") if description else ""
+        match = re.search(r"Cited by\s+([0-9,]+)", description_text, re.IGNORECASE)
+        citedby = _parse_count(match.group(1)) if match else None
+
+    return name, citedby
+
+
 # ── Fetch & parse ───────────────────────────────────────────────────────
 def fetch_google_scholar_data() -> Optional[dict]:
     """Fetch author profile from Google Scholar."""
-    url = f"https://scholar.google.com/citations?user={USER_ID}&hl=en&pagesize=100"
     session = _build_session()
 
-    for attempt in range(1, 4):
+    soup = None
+    name = None
+    citedby = None
+
+    for attempt, host in enumerate(SCHOLAR_HOSTS, start=1):
+        url = (
+            f"https://{host}/citations?view_op=list_works"
+            f"&user={USER_ID}&hl=en&pagesize=100"
+        )
         try:
             resp = session.get(url, headers=HEADERS, timeout=TIMEOUT)
             resp.raise_for_status()
         except requests.RequestException as e:
-            print(f"  [Attempt {attempt}/3] {e}")
-            if attempt < 3:
-                time.sleep(3)
+            print(f"  [Attempt {attempt}/{len(SCHOLAR_HOSTS)}] {host}: {e}")
+            if attempt < len(SCHOLAR_HOSTS):
+                time.sleep(2)
             continue
 
-        if "sorry" in resp.text[:3000].lower():
-            print(f"  [Attempt {attempt}/3] Google Scholar block page detected.")
-            if attempt < 3:
-                time.sleep(5)
+        candidate_soup = BeautifulSoup(resp.text, "html.parser")
+        candidate_name, candidate_citedby = _extract_profile_summary(candidate_soup)
+
+        # A challenge/consent page can return HTTP 200. Do not silently convert
+        # a missing profile into "Unknown" with zero citations.
+        if not candidate_name or candidate_citedby is None or candidate_citedby <= 0:
+            page_title = candidate_soup.title.get_text(" ", strip=True) if candidate_soup.title else "no title"
+            print(
+                f"  [Attempt {attempt}/{len(SCHOLAR_HOSTS)}] {host}: "
+                f"invalid profile response ({page_title!r}, {len(resp.text)} bytes)."
+            )
+            if attempt < len(SCHOLAR_HOSTS):
+                time.sleep(2)
             continue
 
+        soup = candidate_soup
+        name = candidate_name
+        citedby = candidate_citedby
         break
     else:
-        return None  # All attempts failed
-
-    soup = BeautifulSoup(resp.text, "html.parser")
-
-    # ── Name ──
-    name_el = soup.find("div", id="gsc_prf_in")
-    name = name_el.text.strip() if name_el else "Unknown"
+        return None
 
     # ── Stats ──
     stats_tds = soup.find_all("td", class_="gsc_rsb_std")
-    citedby = int(stats_tds[0].text) if len(stats_tds) > 0 else 0
-    citedby5y = int(stats_tds[1].text) if len(stats_tds) > 1 else 0
-    hindex = int(stats_tds[2].text) if len(stats_tds) > 2 else 0
-    hindex5y = int(stats_tds[3].text) if len(stats_tds) > 3 else 0
-    i10index = int(stats_tds[4].text) if len(stats_tds) > 4 else 0
-    i10index5y = int(stats_tds[5].text) if len(stats_tds) > 5 else 0
+    stat_values = [_parse_count(td.get_text()) or 0 for td in stats_tds]
+    citedby5y = stat_values[1] if len(stat_values) > 1 else 0
+    hindex = stat_values[2] if len(stat_values) > 2 else 0
+    hindex5y = stat_values[3] if len(stat_values) > 3 else 0
+    i10index = stat_values[4] if len(stat_values) > 4 else 0
+    i10index5y = stat_values[5] if len(stat_values) > 5 else 0
 
     # ── Citations per year ──
     years = [int(y.text) for y in soup.find_all("span", class_="gsc_g_t")]
