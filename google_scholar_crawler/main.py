@@ -163,10 +163,11 @@ def parse_serpapi_data(data: dict) -> Optional[dict]:
         if not pub_id and not title:
             continue
         cited = article.get("cited_by") or {}
+        citation_value = _parse_count(str(cited.get("value") or "")) or 0
         key = pub_id or title or str(len(publications))
         publications[key] = {
             "author_pub_id": pub_id,
-            "num_citations": int(cited.get("value", 0)),
+            "num_citations": citation_value,
             "title": title,
             "year": str(article.get("year", "")),
         }
