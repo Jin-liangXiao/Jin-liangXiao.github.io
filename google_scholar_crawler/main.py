@@ -50,6 +50,7 @@ HEADERS = {
 }
 
 TIMEOUT = 20
+SERPAPI_URL = "https://serpapi.com/search.json"
 
 
 # ── HTTP session ────────────────────────────────────────────────────────
@@ -115,6 +116,97 @@ def _extract_profile_summary(soup) -> tuple[Optional[str], Optional[int]]:
         citedby = _parse_count(match.group(1)) if match else None
 
     return name, citedby
+
+
+def _serpapi_metric(table: list, metric_name: str) -> tuple[int, int]:
+    """Return the all-time and recent values for a SerpApi metric."""
+    for row in table:
+        metric = row.get(metric_name)
+        if not isinstance(metric, dict):
+            continue
+        all_time = int(metric.get("all", 0))
+        recent = next(
+            (int(value) for key, value in metric.items() if key != "all"),
+            0,
+        )
+        return all_time, recent
+    return 0, 0
+
+
+def parse_serpapi_data(data: dict) -> Optional[dict]:
+    """Convert a Google Scholar Author API response to the local schema."""
+    if data.get("error"):
+        print(f"  SerpApi error: {data['error']}")
+        return None
+
+    name = data.get("author", {}).get("name")
+    cited_by = data.get("cited_by", {})
+    table = cited_by.get("table", [])
+    citedby, citedby5y = _serpapi_metric(table, "citations")
+    hindex, hindex5y = _serpapi_metric(table, "h_index")
+    i10index, i10index5y = _serpapi_metric(table, "i10_index")
+
+    if not name or citedby <= 0:
+        print("  SerpApi returned an incomplete author profile.")
+        return None
+
+    cites_per_year = {
+        int(item["year"]): int(item["citations"])
+        for item in cited_by.get("graph", [])
+        if item.get("year") is not None and item.get("citations") is not None
+    }
+
+    publications = {}
+    for article in data.get("articles", []):
+        pub_id = article.get("citation_id", "")
+        title = article.get("title", "")
+        if not pub_id and not title:
+            continue
+        cited = article.get("cited_by") or {}
+        key = pub_id or title or str(len(publications))
+        publications[key] = {
+            "author_pub_id": pub_id,
+            "num_citations": int(cited.get("value", 0)),
+            "title": title,
+            "year": str(article.get("year", "")),
+        }
+
+    return {
+        "scholar_id": USER_ID,
+        "name": name,
+        "citedby": citedby,
+        "citedby5y": citedby5y,
+        "hindex": hindex,
+        "hindex5y": hindex5y,
+        "i10index": i10index,
+        "i10index5y": i10index5y,
+        "cites_per_year": cites_per_year,
+        "publications": publications,
+        "updated": str(datetime.now()),
+        "source": "SerpApi Google Scholar Author API",
+    }
+
+
+def fetch_serpapi_data(api_key: str) -> Optional[dict]:
+    """Fetch Scholar data through SerpApi for reliable CI access."""
+    session = _build_session()
+    try:
+        response = session.get(
+            SERPAPI_URL,
+            params={
+                "engine": "google_scholar_author",
+                "author_id": USER_ID,
+                "hl": "en",
+                "num": 100,
+                "api_key": api_key,
+            },
+            timeout=60,
+        )
+        response.raise_for_status()
+        return parse_serpapi_data(response.json())
+    except (requests.RequestException, ValueError) as error:
+        print(f"  SerpApi request failed: {error}")
+        return None
 
 
 # ── Fetch & parse ───────────────────────────────────────────────────────
@@ -229,10 +321,18 @@ def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] "
           f"Fetching Google Scholar data for user {USER_ID} ...")
 
-    author = fetch_google_scholar_data()
+    api_key = os.environ.get("SERPAPI_KEY", "").strip()
+    if api_key:
+        print("  Data source: SerpApi Google Scholar Author API")
+        author = fetch_serpapi_data(api_key)
+    else:
+        print("  SERPAPI_KEY is not set; trying Google Scholar directly.")
+        author = fetch_google_scholar_data()
 
     if author is None:
-        print("\nERROR: Failed to fetch data from Google Scholar after all retries.")
+        print("\nERROR: Failed to fetch valid Google Scholar data.")
+        if not api_key and os.environ.get("GITHUB_ACTIONS") == "true":
+            print("       Add the SERPAPI_KEY repository secret for reliable GitHub Actions access.")
         print("       The workflow will keep the previous data on the google-scholar-stats branch.")
         sys.exit(1)
 
