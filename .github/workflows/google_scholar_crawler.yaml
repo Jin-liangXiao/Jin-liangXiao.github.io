@@ -2,14 +2,18 @@ name: Get Citation Data
 
 on: 
   page_build: 
+  workflow_dispatch:
   schedule:
     - cron: '0 8 * * *'
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Install Python dependencies
       run: |
@@ -21,8 +25,6 @@ jobs:
         # Pass no proxy in CI; GitHub Actions has direct internet access
         HTTP_PROXY: ""
         HTTPS_PROXY: ""
-        http_proxy: ""
-        https_proxy: ""
       run: |
         cd google_scholar_crawler
         python3 main.py
